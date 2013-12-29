@@ -1,0 +1,33 @@
+{
+  "name": "hexo-webui",
+  "version": "0.0.1",
+  "description": "Hexo Web UI",
+  "main": "lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tommy351/hexo-webui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tommy351/hexo-webui/issues"
+  },
+  "homepage": "http://zespia.tw/hexo/",
+  "keywords": [
+    "website",
+    "blog",
+    "cms",
+    "framework",
+    "hexo"
+  ],
+  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/tommy351/hexo/master/LICENSE"
+  },
+  "dependencies": {
+    "express": "3.4.7"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.1"
+  }
+}
