@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="hexo">
+  <head>
+    <meta charset="utf-8">
+    <title>Hexo Web UI</title>
+    <%- asset_css('app') %>
+  </head>
+  <body>
+    <%- partial('partials/header') %>
+    <div id="container" ui-view></div>
+    <%- asset_js('app') %>
+  </body>
+</html>

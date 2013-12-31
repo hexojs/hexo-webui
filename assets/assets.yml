@@ -1,0 +1,21 @@
+css:
+  common:
+  app:
+  login:
+
+js:
+  app:
+  - lib/angular/angular
+  - lib/angular-resource/angular-resource
+  - lib/angular-route/angular-route
+  - lib/angular-ui-router/release/angular-ui-router
+  - app
+  - services/post
+  - controllers/home/index
+  - controllers/posts/index
+  - controllers/posts/new
+  - controllers/posts/edit
+  - directives/back
+  - directives/pagination
+  login:
+  - login/index

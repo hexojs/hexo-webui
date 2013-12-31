@@ -1,0 +1,9 @@
+<nav class="section-nav">
+  <a href="/posts/new">Create</a>
+</nav>
+<ul>
+  <li ng-repeat="post in posts">
+    <a href="/posts/{{ post._id }}/edit">{{ post.title }}</a>
+  </li>
+</ul>
+<pagination current="page" total="total" per-page="limit" url="/posts?page=%d"></pagination>
