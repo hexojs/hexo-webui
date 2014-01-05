@@ -1,4 +1,4 @@
-<div class="lightbox">
+<div class="lightbox" ng-class="{on: isOpening}">
   <div class="lightbox-images" ng-click="next()">
     <img class="lightbox-image" src="{{ image.src }}" ng-repeat="image in images" ng-show="current === $index">
   </div>

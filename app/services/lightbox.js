@@ -1,35 +1,66 @@
-angular.module('hexo').factory('lightbox', function($q, $http, $rootScope, $compile){
-  var defaultTemplate = '<lightbox></lightbox>';
+angular.module('hexo').service('lightbox', function($http, $rootScope, $compile, $templateCache, $body, hotkeyService){
+  var templateUrl = '/views/common/lightbox.html',
+    scope = $rootScope.$new(),
+    element = null;
 
-  return function(options){
-    var container = angular.element(options.container || document.body),
-      html;
+  var html = $http.get(templateUrl, {
+    cache: $templateCache
+  }).then(function(response){
+    return response.data;
+  });
 
-    if (options.templateUrl){
-      html = $http.get(options.templateUrl, {
-        cache: $templateCache
-      }).then(function(response){
-        return response.data;
-      });
-    } else {
-      var deferred = $q.defer();
-      deferred.resolve(options.template || defaultTemplate);
-      html = deferred.promise;
-    }
+  scope.images = [];
+  scope.current = 0;
+  scope.isOpening = false;
+
+  var open = this.open = scope.open = function(images){
+    images.forEach(function(item, i){
+      if (item.current) scope.current = i;
+    });
+
+    scope.images = images;
+    scope.isOpening = true;
+
+    if (element) return;
 
     html.then(function(html){
-      var scope = (options.scope || $rootScope).$new();
       element = angular.element(html);
-
-      scope.images = options.images || [];
-      scope.current = 0;
-
-      scope.images.forEach(function(item, i){
-        if (item.current) scope.current = i;
-      });
-
-      container.append(element);
+      $body.append(element);
       $compile(element)(scope);
     });
-  }
+  };
+
+  var close = this.close = scope.close = function(){
+    scope.isOpening = false;
+  };
+
+  var skip = this.skip = scope.skip = function(page){
+    if (page < 0) page = scope.images.length - 1;
+    if (page >= scope.images.length) page = 0;
+
+    scope.current = page;
+  };
+
+  var prev = this.prev = scope.prev = function(){
+    skip(scope.current - 1);
+  };
+
+  var next = this.next = scope.next = function(){
+    skip(scope.current + 1);
+  };
+
+  hotkeyService.on('esc', function(){
+    close();
+    scope.$apply();
+  });
+
+  hotkeyService.on('left', function(){
+    prev();
+    scope.$apply();
+  });
+
+  hotkeyService.on('right', function(){
+    next();
+    scope.$apply();
+  });
 });

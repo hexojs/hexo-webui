@@ -74,7 +74,7 @@ angular.module('hexo').controller('FileListCtrl', function($scope, $stateParams,
         });
       });
 
-      lightbox({images: images});
+      lightbox.open(images);
     } else {
       var modal = Modal({
         controller: 'FileShowCtrl',

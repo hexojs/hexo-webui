@@ -42,7 +42,7 @@ js:
   - directives/breadcrumb
   - directives/modal
   - directives/list
-  - directives/lightbox
+  - directives/context-menu
   - filters/byte
   - filters/filetype
   login:
