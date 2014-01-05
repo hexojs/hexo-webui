@@ -1,0 +1,11 @@
+<modal modal-title="{{ file.name || 'Loading...' }}">
+  <div class="file-show-info">
+    <div class="file-show-type">{{ file.type | filetype }}</div>
+    <div class="file-show-meta">{{ file.date | date }} - {{ file.size | byte }}</div>
+  </div>
+  <footer class="modal-footer">
+    <div class="btn-group right">
+      <a href="/api/files/{{ file.path }}?download=true" download class="btn btn-primary">Download</a>
+    </div>
+  </footer>
+</modal>

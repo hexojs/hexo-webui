@@ -1,0 +1,24 @@
+<nav id="action-bar">
+  <div id="primary-action-bar" ng-hide="selectionLength">
+    <a class="primary-sorter">
+      <span class="sorter-text">Name</span>
+    </a>
+    <a class="minor-sorter">
+      <span class="sorter-text">Published</span>
+    </a>
+    <a class="minor-sorter">
+      <span class="sorter-text">Updated</span>
+    </a>
+  </div>
+  <div id="minor-action-bar" ng-show="selectionLength">{{ selectionLength }}</div>
+</nav>
+<div id="main">
+  <list data="posts">
+    <div class="list-primary-col">
+      <a href="/edit/{{ item.source }}" class="list-link"><i class="list-icon text"></i>{{ item.title }}</a>
+    </div>
+    <div class="list-minor-col">{{ item.date | date }}</div>
+    <div class="list-minor-col">{{ item.updated | date }}</div>
+  </list>
+  <pagination current="page" total="total" per-page="limit" url="/posts/%d" prev-text="Prev" next-text="Next" ng-show="total"></pagination>
+</div>

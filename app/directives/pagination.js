@@ -5,12 +5,12 @@ angular.module('hexo').directive('pagination', function(){
     scope: {
       current: '=',
       total: '=',
-      perPage: '='
+      perPage: '=',
+      prevText: '@',
+      nextText: '@',
+      url: '@'
     },
     controller: function($scope, $attrs){
-      $scope.prevText = $attrs.prevText || 'Prev';
-      $scope.nextText = $attrs.nextText || 'Next';
-
       $scope.noPrev = function(){
         return $scope.current <= 1;
       };
@@ -20,7 +20,7 @@ angular.module('hexo').directive('pagination', function(){
       };
 
       $scope.link = function(page){
-        return $attrs.url.replace('%d', page);
+        return $scope.url.replace('%d', page);
       };
     }
   }

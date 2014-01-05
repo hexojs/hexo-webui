@@ -1,0 +1,748 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/SkyArrow/.nvm/v0.10.22/bin/node',
+1 verbose cli   '/Users/SkyArrow/.nvm/v0.10.22/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-dev',
+1 verbose cli   '-g' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose cache add [ 'node-dev', null ]
+5 verbose cache add name=undefined spec="node-dev" args=["node-dev",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'node-dev',
+6 verbose parsed url   path: 'node-dev',
+6 verbose parsed url   href: 'node-dev' }
+7 silly lockFile c62b500c-node-dev node-dev
+8 verbose lock node-dev /Users/SkyArrow/.npm/c62b500c-node-dev.lock
+9 silly lockFile c62b500c-node-dev node-dev
+10 silly lockFile c62b500c-node-dev node-dev
+11 verbose addNamed [ 'node-dev', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 2552a2f1-node-dev node-dev@
+14 verbose lock node-dev@ /Users/SkyArrow/.npm/2552a2f1-node-dev.lock
+15 silly addNameRange { name: 'node-dev', range: '*', hasData: false }
+16 verbose url raw node-dev
+17 verbose url resolving [ 'https://registry.npmjs.org/', './node-dev' ]
+18 verbose url resolved https://registry.npmjs.org/node-dev
+19 info trying registry request attempt 1 at 15:16:55
+20 http GET https://registry.npmjs.org/node-dev
+21 http 200 https://registry.npmjs.org/node-dev
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Wed, 01 Jan 2014 07:16:57 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+22 silly registry.get     etag: '"DKCGRCON3187D0DLLKGPO2U3Z"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'content-length': '78244',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1388560616.908291101,VS0,VE163',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'node-dev', range: '*', hasData: true }
+24 silly addNameRange versions [ 'node-dev',
+24 silly addNameRange   [ '0.1.3',
+24 silly addNameRange     '0.1.4',
+24 silly addNameRange     '0.1.5',
+24 silly addNameRange     '0.1.6',
+24 silly addNameRange     '0.1.8',
+24 silly addNameRange     '0.1.9',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.2.1',
+24 silly addNameRange     '0.2.2',
+24 silly addNameRange     '0.2.3',
+24 silly addNameRange     '0.2.4',
+24 silly addNameRange     '0.2.5',
+24 silly addNameRange     '0.2.6',
+24 silly addNameRange     '0.2.7',
+24 silly addNameRange     '0.2.8',
+24 silly addNameRange     '0.2.9',
+24 silly addNameRange     '0.2.10',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '2.0.0',
+24 silly addNameRange     '2.0.1',
+24 silly addNameRange     '2.0.2',
+24 silly addNameRange     '2.1.0',
+24 silly addNameRange     '2.1.1',
+24 silly addNameRange     '2.1.2',
+24 silly addNameRange     '2.1.3',
+24 silly addNameRange     '2.1.4' ] ]
+25 verbose addNamed [ 'node-dev', '2.1.4' ]
+26 verbose addNamed [ '2.1.4', '2.1.4' ]
+27 silly lockFile c09c63af-node-dev-2-1-4 node-dev@2.1.4
+28 verbose lock node-dev@2.1.4 /Users/SkyArrow/.npm/c09c63af-node-dev-2-1-4.lock
+29 silly lockFile 223c0383--org-node-dev-node-dev-2-1-4-tgz https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz
+30 verbose lock https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz /Users/SkyArrow/.npm/223c0383--org-node-dev-node-dev-2-1-4-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz',
+31 verbose addRemoteTarball   '258d543bf1f5c3c4bc92b939201588a0a23231e4' ]
+32 info retry fetch attempt 1 at 15:16:57
+33 verbose fetch to= /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/tmp.tgz
+34 http GET https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz
+35 http 200 https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz
+36 verbose tar unpack /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/tmp.tgz
+37 silly lockFile b726cab5-7029-0-08007107209414244-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+38 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package /Users/SkyArrow/.npm/b726cab5-7029-0-08007107209414244-package.lock
+39 silly lockFile 67fd98b2-7029-0-08007107209414244-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/tmp.tgz
+40 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/tmp.tgz /Users/SkyArrow/.npm/67fd98b2-7029-0-08007107209414244-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry .jshintrc
+46 silly gunzTarPerm extractEntry .travis.yml
+47 silly gunzTarPerm extractEntry bin/node-dev
+48 silly gunzTarPerm extractEntry icons/node_error.png
+49 silly gunzTarPerm extractEntry icons/node_info.png
+50 silly gunzTarPerm extractEntry lib/cfg.js
+51 silly gunzTarPerm extractEntry lib/hook.js
+52 silly gunzTarPerm extractEntry lib/index.js
+53 silly gunzTarPerm extractEntry lib/ipc.js
+54 silly gunzTarPerm extractEntry lib/log.js
+55 silly gunzTarPerm extractEntry lib/notify.js
+56 silly gunzTarPerm extractEntry lib/wrap.js
+57 silly lockFile b726cab5-7029-0-08007107209414244-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+58 silly lockFile b726cab5-7029-0-08007107209414244-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+59 silly lockFile 67fd98b2-7029-0-08007107209414244-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/tmp.tgz
+60 silly lockFile 67fd98b2-7029-0-08007107209414244-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/tmp.tgz
+61 verbose tar pack [ '/Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz',
+61 verbose tar pack   '/var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package' ]
+62 verbose tarball /Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+63 verbose folder /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+64 silly lockFile b726cab5-7029-0-08007107209414244-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+65 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package /Users/SkyArrow/.npm/b726cab5-7029-0-08007107209414244-package.lock
+66 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+67 verbose lock tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz /Users/SkyArrow/.npm/dc19a61a-w-npm-node-dev-2-1-4-package-tgz.lock
+68 silly lockFile b726cab5-7029-0-08007107209414244-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+69 silly lockFile b726cab5-7029-0-08007107209414244-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560617029-0.08007107209414244/package
+70 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+71 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+72 silly lockFile 2c544476-Arrow-npm-node-dev-2-1-4-package /Users/SkyArrow/.npm/node-dev/2.1.4/package
+73 verbose lock /Users/SkyArrow/.npm/node-dev/2.1.4/package /Users/SkyArrow/.npm/2c544476-Arrow-npm-node-dev-2-1-4-package.lock
+74 silly lockFile 2c544476-Arrow-npm-node-dev-2-1-4-package /Users/SkyArrow/.npm/node-dev/2.1.4/package
+75 silly lockFile 2c544476-Arrow-npm-node-dev-2-1-4-package /Users/SkyArrow/.npm/node-dev/2.1.4/package
+76 verbose tar unpack /Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+77 silly lockFile b7a3dfdc-Arrow-npm-node-dev-2-1-4-package tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package
+78 verbose lock tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package /Users/SkyArrow/.npm/b7a3dfdc-Arrow-npm-node-dev-2-1-4-package.lock
+79 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+80 verbose lock tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz /Users/SkyArrow/.npm/dc19a61a-w-npm-node-dev-2-1-4-package-tgz.lock
+81 silly gunzTarPerm modes [ '755', '644' ]
+82 silly gunzTarPerm extractEntry package.json
+83 silly gunzTarPerm extractEntry .npmignore
+84 silly gunzTarPerm extractEntry README.md
+85 silly gunzTarPerm extractEntry .jshintrc
+86 silly gunzTarPerm extractEntry .travis.yml
+87 silly gunzTarPerm extractEntry bin/node-dev
+88 silly gunzTarPerm extractEntry icons/node_error.png
+89 silly gunzTarPerm extractEntry icons/node_info.png
+90 silly gunzTarPerm extractEntry lib/cfg.js
+91 silly gunzTarPerm extractEntry lib/hook.js
+92 silly gunzTarPerm extractEntry lib/index.js
+93 silly gunzTarPerm extractEntry lib/ipc.js
+94 silly gunzTarPerm extractEntry lib/log.js
+95 silly gunzTarPerm extractEntry lib/notify.js
+96 silly gunzTarPerm extractEntry lib/wrap.js
+97 silly lockFile b7a3dfdc-Arrow-npm-node-dev-2-1-4-package tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package
+98 silly lockFile b7a3dfdc-Arrow-npm-node-dev-2-1-4-package tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package
+99 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+100 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+101 verbose chmod /Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz 644
+102 verbose chown /Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz [ 501, 20 ]
+103 silly lockFile 223c0383--org-node-dev-node-dev-2-1-4-tgz https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz
+104 silly lockFile 223c0383--org-node-dev-node-dev-2-1-4-tgz https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz
+105 silly lockFile c09c63af-node-dev-2-1-4 node-dev@2.1.4
+106 silly lockFile c09c63af-node-dev-2-1-4 node-dev@2.1.4
+107 silly lockFile 2552a2f1-node-dev node-dev@
+108 silly lockFile 2552a2f1-node-dev node-dev@
+109 silly resolved [ { name: 'node-dev',
+109 silly resolved     version: '2.1.4',
+109 silly resolved     description: 'Restarts your app when files are modified',
+109 silly resolved     keywords: [ 'restart', 'reload', 'supervisor', 'monitor', 'watch' ],
+109 silly resolved     author: { name: 'Felix Gnass' },
+109 silly resolved     repository: { type: 'git', url: 'http://github.com/fgnass/node-dev.git' },
+109 silly resolved     license: 'MIT',
+109 silly resolved     bin: { 'node-dev': './bin/node-dev' },
+109 silly resolved     main: './lib',
+109 silly resolved     preferGlobal: true,
+109 silly resolved     engines: { node: '>=0.8.0' },
+109 silly resolved     scripts: { test: 'mocha' },
+109 silly resolved     dependencies:
+109 silly resolved      { growl: '~1.7.0',
+109 silly resolved        dateformat: '~1.0.4-1.2.3',
+109 silly resolved        filewatcher: '~1.0.0' },
+109 silly resolved     devDependencies:
+109 silly resolved      { mocha: '~1.4.1',
+109 silly resolved        'expect.js': '~0.2.0',
+109 silly resolved        'coffee-script': '~1.5.0' },
+109 silly resolved     readme: '[![Build Status](https://secure.travis-ci.org/fgnass/node-dev.png)](http://travis-ci.org/fgnass/node-dev)\n\n# node-dev\n\nNode-dev is a development tool for [Node.js](http://nodejs.org) that\nautomatically restarts the node process when a script is modified.\n\nIt\'s an alternative to tools like\n[supervisor](https://github.com/isaacs/node-supervisor) or\n[nodemon](https://github.com/remy/nodemon) that doesn\'t require any\nconfiguration. Just run `node-dev foo.js` as you would normally run `node` and\nit will automatically figure out which files need to be watched.\n\nYou may also use node-dev with [CoffeeScript](http://http://coffeescript.org/)\nor [LiveScript](http://livescript.net/) apps. Just run `node-dev app.coffee`\nor `node-dev app.ls`. You may also register additional language flavors by\nadding them to the extensions list in your [.node-dev.json](#settings) config\nfile.\n\n### Desktop Notifications\n\nStatus and error messages can be displayed as desktop notification using either\n[Growl](http://growl.info/about.php) or\n[libnotify](http://developer.gnome.org/libnotify/).\n\n![Screenshot](http://fgnass.github.com/images/node-dev.png)\n\n![Screenshot](http://fgnass.github.com/images/node-dev-linux.png)\n\n### Installation\n\nNode-dev can be installed via [npm](http://github.com/isaacs/npm):\n\n    npm install -g node-dev\n\nIn order to use Growl notifications\n[growlnotify](http://growl.info/extras.php#growlnotify) must be installed on\nyour system.\n\nTo use OSX\'s built in notifications:\n\n    sudo gem install terminal-notifier\n\n### Settings\n\nUpon startup node-dev looks for a `.node-dev.json` file in the user\'s HOME\ndirectory. It will also look for a `.node-dev.json` file in the current\ndirectory which – if present – overwrites the global settings.\n\n* __vm__ – Whether to watch files loaded via Node\'s [VM](http://nodejs.org/docs/latest/api/vm.html) module. _Default:_ `true`\n* __fork__ – Whether to hook into [child_process.fork()](http://nodejs.org/docs/latest/api/child_process.html#child_process_child_process_fork_modulepath_args_options) which is required for [clustered](http://nodejs.org/docs/latest/api/cluster.html) programs. _Default:_ `true`\n* __notify__ – Whether to display desktop notifications. _Default:_ `true`\n* __timestamp__ – The timestamp format to use for logging restarts. _Default:_ `"HH:MM:ss"`\n* __clear__ – Whether to clear the screen upon restarts. _Default:_ `false`\n* __extensions__ – Modules to load based bad on extension of the main script. _Default:_\n  `{ coffee: "coffee-script", ls: "LiveScript" }`\n\n### The MIT License (MIT)\n\nCopyright (c) 2013 Felix Gnass\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n',
+109 silly resolved     readmeFilename: 'README.md',
+109 silly resolved     bugs: { url: 'https://github.com/fgnass/node-dev/issues' },
+109 silly resolved     homepage: 'https://github.com/fgnass/node-dev',
+109 silly resolved     _id: 'node-dev@2.1.4',
+109 silly resolved     dist: { shasum: '258d543bf1f5c3c4bc92b939201588a0a23231e4' },
+109 silly resolved     _from: 'node-dev@',
+109 silly resolved     _resolved: 'https://registry.npmjs.org/node-dev/-/node-dev-2.1.4.tgz' } ]
+110 info install node-dev@2.1.4 into /Users/SkyArrow/.nvm/v0.10.22/lib
+111 info installOne node-dev@2.1.4
+112 info /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev unbuild
+113 verbose tar unpack /Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+114 silly lockFile 0f864de5--10-22-lib-node-modules-node-dev tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+115 verbose lock tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev /Users/SkyArrow/.npm/0f864de5--10-22-lib-node-modules-node-dev.lock
+116 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+117 verbose lock tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz /Users/SkyArrow/.npm/dc19a61a-w-npm-node-dev-2-1-4-package-tgz.lock
+118 silly gunzTarPerm modes [ '755', '644' ]
+119 silly gunzTarPerm extractEntry package.json
+120 silly gunzTarPerm extractEntry .npmignore
+121 silly gunzTarPerm extractEntry README.md
+122 silly gunzTarPerm extractEntry .jshintrc
+123 silly gunzTarPerm extractEntry .travis.yml
+124 silly gunzTarPerm extractEntry bin/node-dev
+125 silly gunzTarPerm extractEntry icons/node_error.png
+126 silly gunzTarPerm extractEntry icons/node_info.png
+127 silly gunzTarPerm extractEntry lib/cfg.js
+128 silly gunzTarPerm extractEntry lib/hook.js
+129 silly gunzTarPerm extractEntry lib/index.js
+130 silly gunzTarPerm extractEntry lib/ipc.js
+131 silly gunzTarPerm extractEntry lib/log.js
+132 silly gunzTarPerm extractEntry lib/notify.js
+133 silly gunzTarPerm extractEntry lib/wrap.js
+134 silly lockFile 0f864de5--10-22-lib-node-modules-node-dev tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+135 silly lockFile 0f864de5--10-22-lib-node-modules-node-dev tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+136 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+137 silly lockFile dc19a61a-w-npm-node-dev-2-1-4-package-tgz tar:///Users/SkyArrow/.npm/node-dev/2.1.4/package.tgz
+138 info preinstall node-dev@2.1.4
+139 verbose readDependencies using package.json deps
+140 verbose readDependencies using package.json deps
+141 verbose cache add [ 'filewatcher@~1.0.0', null ]
+142 verbose cache add name=undefined spec="filewatcher@~1.0.0" args=["filewatcher@~1.0.0",null]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: 'filewatcher@~1.0.0',
+143 verbose parsed url   path: 'filewatcher@~1.0.0',
+143 verbose parsed url   href: 'filewatcher@~1.0.0' }
+144 verbose cache add name="filewatcher" spec="~1.0.0" args=["filewatcher","~1.0.0"]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: '~1.0.0',
+145 verbose parsed url   path: '~1.0.0',
+145 verbose parsed url   href: '~1.0.0' }
+146 verbose addNamed [ 'filewatcher', '~1.0.0' ]
+147 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+148 silly lockFile 6e520b53-filewatcher-1-0-0 filewatcher@~1.0.0
+149 verbose lock filewatcher@~1.0.0 /Users/SkyArrow/.npm/6e520b53-filewatcher-1-0-0.lock
+150 verbose cache add [ 'growl@~1.7.0', null ]
+151 verbose cache add name=undefined spec="growl@~1.7.0" args=["growl@~1.7.0",null]
+152 verbose parsed url { protocol: null,
+152 verbose parsed url   slashes: null,
+152 verbose parsed url   auth: null,
+152 verbose parsed url   host: null,
+152 verbose parsed url   port: null,
+152 verbose parsed url   hostname: null,
+152 verbose parsed url   hash: null,
+152 verbose parsed url   search: null,
+152 verbose parsed url   query: null,
+152 verbose parsed url   pathname: 'growl@~1.7.0',
+152 verbose parsed url   path: 'growl@~1.7.0',
+152 verbose parsed url   href: 'growl@~1.7.0' }
+153 verbose cache add name="growl" spec="~1.7.0" args=["growl","~1.7.0"]
+154 verbose parsed url { protocol: null,
+154 verbose parsed url   slashes: null,
+154 verbose parsed url   auth: null,
+154 verbose parsed url   host: null,
+154 verbose parsed url   port: null,
+154 verbose parsed url   hostname: null,
+154 verbose parsed url   hash: null,
+154 verbose parsed url   search: null,
+154 verbose parsed url   query: null,
+154 verbose parsed url   pathname: '~1.7.0',
+154 verbose parsed url   path: '~1.7.0',
+154 verbose parsed url   href: '~1.7.0' }
+155 verbose addNamed [ 'growl', '~1.7.0' ]
+156 verbose addNamed [ null, '>=1.7.0-0 <1.8.0-0' ]
+157 silly lockFile 4821b59b-growl-1-7-0 growl@~1.7.0
+158 verbose lock growl@~1.7.0 /Users/SkyArrow/.npm/4821b59b-growl-1-7-0.lock
+159 verbose cache add [ 'dateformat@~1.0.4-1.2.3', null ]
+160 verbose cache add name=undefined spec="dateformat@~1.0.4-1.2.3" args=["dateformat@~1.0.4-1.2.3",null]
+161 verbose parsed url { protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: 'dateformat@~1.0.4-1.2.3',
+161 verbose parsed url   path: 'dateformat@~1.0.4-1.2.3',
+161 verbose parsed url   href: 'dateformat@~1.0.4-1.2.3' }
+162 verbose cache add name="dateformat" spec="~1.0.4-1.2.3" args=["dateformat","~1.0.4-1.2.3"]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: '~1.0.4-1.2.3',
+163 verbose parsed url   path: '~1.0.4-1.2.3',
+163 verbose parsed url   href: '~1.0.4-1.2.3' }
+164 verbose addNamed [ 'dateformat', '~1.0.4-1.2.3' ]
+165 verbose addNamed [ null, '>=1.0.4-1.2.3 <1.1.0-0' ]
+166 silly lockFile fa876287-dateformat-1-0-4-1-2-3 dateformat@~1.0.4-1.2.3
+167 verbose lock dateformat@~1.0.4-1.2.3 /Users/SkyArrow/.npm/fa876287-dateformat-1-0-4-1-2-3.lock
+168 silly addNameRange { name: 'filewatcher',
+168 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+168 silly addNameRange   hasData: false }
+169 silly addNameRange { name: 'growl', range: '>=1.7.0-0 <1.8.0-0', hasData: false }
+170 verbose url raw filewatcher
+171 verbose url resolving [ 'https://registry.npmjs.org/', './filewatcher' ]
+172 verbose url resolved https://registry.npmjs.org/filewatcher
+173 info trying registry request attempt 1 at 15:16:57
+174 http GET https://registry.npmjs.org/filewatcher
+175 silly addNameRange { name: 'dateformat',
+175 silly addNameRange   range: '>=1.0.4-1.2.3 <1.1.0-0',
+175 silly addNameRange   hasData: false }
+176 verbose url raw dateformat
+177 verbose url resolving [ 'https://registry.npmjs.org/', './dateformat' ]
+178 verbose url resolved https://registry.npmjs.org/dateformat
+179 info trying registry request attempt 1 at 15:16:57
+180 http GET https://registry.npmjs.org/dateformat
+181 verbose url raw growl
+182 verbose url resolving [ 'https://registry.npmjs.org/', './growl' ]
+183 verbose url resolved https://registry.npmjs.org/growl
+184 info trying registry request attempt 1 at 15:16:57
+185 verbose etag "6ZBHK2H92VHSIVE7ZHNUXM7A5"
+186 http GET https://registry.npmjs.org/growl
+187 http 304 https://registry.npmjs.org/growl
+188 silly registry.get cb [ 304,
+188 silly registry.get   { date: 'Wed, 01 Jan 2014 07:16:58 GMT',
+188 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+188 silly registry.get     connection: 'Keep-Alive',
+188 silly registry.get     'keep-alive': 'timeout=10, max=50',
+188 silly registry.get     etag: '"6ZBHK2H92VHSIVE7ZHNUXM7A5"' } ]
+189 verbose etag growl from cache
+190 silly addNameRange number 2 { name: 'growl', range: '>=1.7.0-0 <1.8.0-0', hasData: true }
+191 silly addNameRange versions [ 'growl',
+191 silly addNameRange   [ '1.0.1',
+191 silly addNameRange     '1.0.2',
+191 silly addNameRange     '1.1.0',
+191 silly addNameRange     '1.2.0',
+191 silly addNameRange     '1.2.1',
+191 silly addNameRange     '1.3.0',
+191 silly addNameRange     '1.4.0',
+191 silly addNameRange     '1.4.1',
+191 silly addNameRange     '1.5.0',
+191 silly addNameRange     '1.5.1',
+191 silly addNameRange     '1.6.0',
+191 silly addNameRange     '1.6.1',
+191 silly addNameRange     '1.7.0' ] ]
+192 verbose addNamed [ 'growl', '1.7.0' ]
+193 verbose addNamed [ '1.7.0', '1.7.0' ]
+194 silly lockFile 2e65a17a-growl-1-7-0 growl@1.7.0
+195 verbose lock growl@1.7.0 /Users/SkyArrow/.npm/2e65a17a-growl-1-7-0.lock
+196 silly lockFile 2e65a17a-growl-1-7-0 growl@1.7.0
+197 silly lockFile 2e65a17a-growl-1-7-0 growl@1.7.0
+198 silly lockFile 4821b59b-growl-1-7-0 growl@~1.7.0
+199 silly lockFile 4821b59b-growl-1-7-0 growl@~1.7.0
+200 http 200 https://registry.npmjs.org/filewatcher
+201 silly registry.get cb [ 200,
+201 silly registry.get   { date: 'Wed, 01 Jan 2014 07:16:58 GMT',
+201 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+201 silly registry.get     etag: '"F5KKUSGT63ACNXZ1TMVKKZ2OG"',
+201 silly registry.get     'content-type': 'application/json',
+201 silly registry.get     'content-length': '5920',
+201 silly registry.get     'accept-ranges': 'bytes',
+201 silly registry.get     via: '1.1 varnish',
+201 silly registry.get     age: '0',
+201 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+201 silly registry.get     'x-cache': 'MISS',
+201 silly registry.get     'x-cache-hits': '0',
+201 silly registry.get     'x-timer': 'S1388560618.386986732,VS0,VE157',
+201 silly registry.get     vary: 'Accept',
+201 silly registry.get     'keep-alive': 'timeout=10, max=50',
+201 silly registry.get     connection: 'Keep-Alive' } ]
+202 silly addNameRange number 2 { name: 'filewatcher',
+202 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+202 silly addNameRange   hasData: true }
+203 silly addNameRange versions [ 'filewatcher', [ '1.0.0' ] ]
+204 verbose addNamed [ 'filewatcher', '1.0.0' ]
+205 verbose addNamed [ '1.0.0', '1.0.0' ]
+206 silly lockFile b955e2d2-filewatcher-1-0-0 filewatcher@1.0.0
+207 verbose lock filewatcher@1.0.0 /Users/SkyArrow/.npm/b955e2d2-filewatcher-1-0-0.lock
+208 silly lockFile 61891eb5-ilewatcher-filewatcher-1-0-0-tgz https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz
+209 verbose lock https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz /Users/SkyArrow/.npm/61891eb5-ilewatcher-filewatcher-1-0-0-tgz.lock
+210 verbose addRemoteTarball [ 'https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz',
+210 verbose addRemoteTarball   '5929f5956659a93ac42cf85fdf3c4d9c90e5619e' ]
+211 info retry fetch attempt 1 at 15:16:58
+212 verbose fetch to= /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/tmp.tgz
+213 http GET https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz
+214 http 200 https://registry.npmjs.org/dateformat
+215 silly registry.get cb [ 200,
+215 silly registry.get   { date: 'Wed, 01 Jan 2014 07:16:58 GMT',
+215 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+215 silly registry.get     etag: '"3X9UXF43ILNL7FWWNIJ8BVPB1"',
+215 silly registry.get     'content-type': 'application/json',
+215 silly registry.get     'content-length': '21684',
+215 silly registry.get     'accept-ranges': 'bytes',
+215 silly registry.get     via: '1.1 varnish',
+215 silly registry.get     age: '0',
+215 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+215 silly registry.get     'x-cache': 'MISS',
+215 silly registry.get     'x-cache-hits': '0',
+215 silly registry.get     'x-timer': 'S1388560618.399197817,VS0,VE157',
+215 silly registry.get     vary: 'Accept',
+215 silly registry.get     'keep-alive': 'timeout=10, max=50',
+215 silly registry.get     connection: 'Keep-Alive' } ]
+216 silly addNameRange number 2 { name: 'dateformat',
+216 silly addNameRange   range: '>=1.0.4-1.2.3 <1.1.0-0',
+216 silly addNameRange   hasData: true }
+217 silly addNameRange versions [ 'dateformat',
+217 silly addNameRange   [ '0.9.0-1.2.3',
+217 silly addNameRange     '1.0.0-1.2.3',
+217 silly addNameRange     '1.0.1-1.2.3',
+217 silly addNameRange     '1.0.2-1.2.3',
+217 silly addNameRange     '1.0.3-1.2.3',
+217 silly addNameRange     '1.0.4-1.2.3',
+217 silly addNameRange     '1.0.5-1.2.3',
+217 silly addNameRange     '1.0.6-1.2.3',
+217 silly addNameRange     '1.0.7-1.2.3' ] ]
+218 verbose addNamed [ 'dateformat', '1.0.7-1.2.3' ]
+219 verbose addNamed [ '1.0.7-1.2.3', '1.0.7-1.2.3' ]
+220 silly lockFile 066f9cb9-dateformat-1-0-7-1-2-3 dateformat@1.0.7-1.2.3
+221 verbose lock dateformat@1.0.7-1.2.3 /Users/SkyArrow/.npm/066f9cb9-dateformat-1-0-7-1-2-3.lock
+222 silly lockFile 1d211258-ormat-dateformat-1-0-7-1-2-3-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+223 verbose lock https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz /Users/SkyArrow/.npm/1d211258-ormat-dateformat-1-0-7-1-2-3-tgz.lock
+224 verbose addRemoteTarball [ 'https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz',
+224 verbose addRemoteTarball   'ebb561bb7214ee57a8dc2687adab1d555de9419c' ]
+225 info retry fetch attempt 1 at 15:16:58
+226 verbose fetch to= /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/tmp.tgz
+227 http GET https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+228 http 200 https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz
+229 verbose tar unpack /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/tmp.tgz
+230 silly lockFile c6578d4d-18208-0-9383847657591105-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+231 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package /Users/SkyArrow/.npm/c6578d4d-18208-0-9383847657591105-package.lock
+232 silly lockFile 12982184-18208-0-9383847657591105-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/tmp.tgz
+233 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/tmp.tgz /Users/SkyArrow/.npm/12982184-18208-0-9383847657591105-tmp-tgz.lock
+234 silly gunzTarPerm modes [ '755', '644' ]
+235 silly gunzTarPerm extractEntry package.json
+236 silly gunzTarPerm extractEntry .npmignore
+237 silly gunzTarPerm extractEntry README.md
+238 silly gunzTarPerm extractEntry index.js
+239 silly gunzTarPerm extractEntry .jshintrc
+240 silly gunzTarPerm extractEntry .travis.yml
+241 silly lockFile c6578d4d-18208-0-9383847657591105-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+242 silly lockFile c6578d4d-18208-0-9383847657591105-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+243 silly lockFile 12982184-18208-0-9383847657591105-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/tmp.tgz
+244 silly lockFile 12982184-18208-0-9383847657591105-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/tmp.tgz
+245 verbose tar pack [ '/Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz',
+245 verbose tar pack   '/var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package' ]
+246 verbose tarball /Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+247 verbose folder /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+248 silly lockFile c6578d4d-18208-0-9383847657591105-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+249 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package /Users/SkyArrow/.npm/c6578d4d-18208-0-9383847657591105-package.lock
+250 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+251 verbose lock tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz /Users/SkyArrow/.npm/ff19b642-pm-filewatcher-1-0-0-package-tgz.lock
+252 silly lockFile c6578d4d-18208-0-9383847657591105-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+253 silly lockFile c6578d4d-18208-0-9383847657591105-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618208-0.9383847657591105/package
+254 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+255 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+256 silly lockFile 56054bdc-ow-npm-filewatcher-1-0-0-package /Users/SkyArrow/.npm/filewatcher/1.0.0/package
+257 verbose lock /Users/SkyArrow/.npm/filewatcher/1.0.0/package /Users/SkyArrow/.npm/56054bdc-ow-npm-filewatcher-1-0-0-package.lock
+258 silly lockFile 56054bdc-ow-npm-filewatcher-1-0-0-package /Users/SkyArrow/.npm/filewatcher/1.0.0/package
+259 silly lockFile 56054bdc-ow-npm-filewatcher-1-0-0-package /Users/SkyArrow/.npm/filewatcher/1.0.0/package
+260 verbose tar unpack /Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+261 silly lockFile 6081d829-ow-npm-filewatcher-1-0-0-package tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package
+262 verbose lock tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package /Users/SkyArrow/.npm/6081d829-ow-npm-filewatcher-1-0-0-package.lock
+263 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+264 verbose lock tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz /Users/SkyArrow/.npm/ff19b642-pm-filewatcher-1-0-0-package-tgz.lock
+265 silly gunzTarPerm modes [ '755', '644' ]
+266 silly gunzTarPerm extractEntry package.json
+267 silly gunzTarPerm extractEntry .npmignore
+268 silly gunzTarPerm extractEntry README.md
+269 silly gunzTarPerm extractEntry index.js
+270 silly gunzTarPerm extractEntry .jshintrc
+271 silly gunzTarPerm extractEntry .travis.yml
+272 silly lockFile 6081d829-ow-npm-filewatcher-1-0-0-package tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package
+273 silly lockFile 6081d829-ow-npm-filewatcher-1-0-0-package tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package
+274 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+275 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+276 verbose chmod /Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz 644
+277 verbose chown /Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz [ 501, 20 ]
+278 silly lockFile 61891eb5-ilewatcher-filewatcher-1-0-0-tgz https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz
+279 silly lockFile 61891eb5-ilewatcher-filewatcher-1-0-0-tgz https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz
+280 silly lockFile b955e2d2-filewatcher-1-0-0 filewatcher@1.0.0
+281 silly lockFile b955e2d2-filewatcher-1-0-0 filewatcher@1.0.0
+282 silly lockFile 6e520b53-filewatcher-1-0-0 filewatcher@~1.0.0
+283 silly lockFile 6e520b53-filewatcher-1-0-0 filewatcher@~1.0.0
+284 http 200 https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+285 verbose tar unpack /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/tmp.tgz
+286 silly lockFile f4f0584e-18291-0-4315507400315255-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+287 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package /Users/SkyArrow/.npm/f4f0584e-18291-0-4315507400315255-package.lock
+288 silly lockFile 92b98842-18291-0-4315507400315255-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/tmp.tgz
+289 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/tmp.tgz /Users/SkyArrow/.npm/92b98842-18291-0-4315507400315255-tmp-tgz.lock
+290 silly gunzTarPerm modes [ '755', '644' ]
+291 silly gunzTarPerm extractEntry package.json
+292 silly gunzTarPerm extractEntry LICENSE
+293 silly gunzTarPerm extractEntry lib/dateformat.js
+294 silly gunzTarPerm extractEntry Readme.md
+295 silly gunzTarPerm extractEntry test/basic.js
+296 silly gunzTarPerm extractEntry test/test_dayofweek.js
+297 silly gunzTarPerm extractEntry test/test_weekofyear.js
+298 silly gunzTarPerm extractEntry test/test_weekofyear.sh
+299 silly lockFile f4f0584e-18291-0-4315507400315255-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+300 silly lockFile f4f0584e-18291-0-4315507400315255-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+301 silly lockFile 92b98842-18291-0-4315507400315255-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/tmp.tgz
+302 silly lockFile 92b98842-18291-0-4315507400315255-tmp-tgz tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/tmp.tgz
+303 verbose tar pack [ '/Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz',
+303 verbose tar pack   '/var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package' ]
+304 verbose tarball /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+305 verbose folder /var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+306 silly lockFile f4f0584e-18291-0-4315507400315255-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+307 verbose lock tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package /Users/SkyArrow/.npm/f4f0584e-18291-0-4315507400315255-package.lock
+308 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+309 verbose lock tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz /Users/SkyArrow/.npm/e7b2dd71-teformat-1-0-7-1-2-3-package-tgz.lock
+310 silly lockFile f4f0584e-18291-0-4315507400315255-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+311 silly lockFile f4f0584e-18291-0-4315507400315255-package tar:///var/folders/1y/r76f99c12tl4pdl6p2l51skc0000gn/T/npm-81172-NDgoLn_U/1388560618291-0.4315507400315255/package
+312 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+313 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+314 silly lockFile 775fef6d-m-dateformat-1-0-7-1-2-3-package /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package
+315 verbose lock /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package /Users/SkyArrow/.npm/775fef6d-m-dateformat-1-0-7-1-2-3-package.lock
+316 silly lockFile 775fef6d-m-dateformat-1-0-7-1-2-3-package /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package
+317 silly lockFile 775fef6d-m-dateformat-1-0-7-1-2-3-package /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package
+318 verbose tar unpack /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+319 silly lockFile 0c1e657d-m-dateformat-1-0-7-1-2-3-package tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package
+320 verbose lock tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package /Users/SkyArrow/.npm/0c1e657d-m-dateformat-1-0-7-1-2-3-package.lock
+321 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+322 verbose lock tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz /Users/SkyArrow/.npm/e7b2dd71-teformat-1-0-7-1-2-3-package-tgz.lock
+323 silly gunzTarPerm modes [ '755', '644' ]
+324 silly gunzTarPerm extractEntry package.json
+325 silly gunzTarPerm extractEntry LICENSE
+326 silly gunzTarPerm extractEntry Readme.md
+327 silly gunzTarPerm extractEntry lib/dateformat.js
+328 silly gunzTarPerm extractEntry test/basic.js
+329 silly gunzTarPerm extractEntry test/test_dayofweek.js
+330 silly gunzTarPerm extractEntry test/test_weekofyear.js
+331 silly gunzTarPerm extractEntry test/test_weekofyear.sh
+332 silly lockFile 0c1e657d-m-dateformat-1-0-7-1-2-3-package tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package
+333 silly lockFile 0c1e657d-m-dateformat-1-0-7-1-2-3-package tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package
+334 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+335 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+336 verbose chmod /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz 644
+337 verbose chown /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz [ 501, 20 ]
+338 silly lockFile 1d211258-ormat-dateformat-1-0-7-1-2-3-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+339 silly lockFile 1d211258-ormat-dateformat-1-0-7-1-2-3-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+340 silly lockFile 066f9cb9-dateformat-1-0-7-1-2-3 dateformat@1.0.7-1.2.3
+341 silly lockFile 066f9cb9-dateformat-1-0-7-1-2-3 dateformat@1.0.7-1.2.3
+342 silly lockFile fa876287-dateformat-1-0-4-1-2-3 dateformat@~1.0.4-1.2.3
+343 silly lockFile fa876287-dateformat-1-0-4-1-2-3 dateformat@~1.0.4-1.2.3
+344 silly resolved [ { name: 'growl',
+344 silly resolved     version: '1.7.0',
+344 silly resolved     description: 'Growl unobtrusive notifications',
+344 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+344 silly resolved     main: './lib/growl.js',
+344 silly resolved     readme: '# Growl for nodejs\n\nGrowl support for Nodejs. This is essentially a port of my [Ruby Growl Library](http://github.com/visionmedia/growl). Ubuntu/Linux support added thanks to [@niftylettuce](http://github.com/niftylettuce). \n\n## Installation\n\n### Install \n\n### Mac OS X (Darwin):\n\n  Install [growlnotify(1)](http://growl.info/extras.php#growlnotify). On OS X 10.8, Notification Center is supported using [terminal-notifier](https://github.com/alloy/terminal-notifier). To install:\n  \n      $ sudo gem install terminal-notifier\n      \n  Install [npm](http://npmjs.org/) and run:\n  \n      $ npm install growl\n\n### Ubuntu (Linux):\n\n  Install `notify-send` through the [libnotify-bin](http://packages.ubuntu.com/libnotify-bin) package:\n\n      $ sudo apt-get install libnotify-bin\n\n  Install [npm](http://npmjs.org/) and run:\n  \n      $ npm install growl\n\n### Windows:\n\n  Download and install [Growl for Windows](http://www.growlforwindows.com/gfw/default.aspx)\n\n  Download [growlnotify](http://www.growlforwindows.com/gfw/help/growlnotify.aspx) - **IMPORTANT :** Unpack growlnotify to a folder that is present in your path!\n\n  Install [npm](http://npmjs.org/) and run:\n  \n      $ npm install growl\n\n## Examples\n\nCallback functions are optional\n\n    var growl = require(\'growl\')\n    growl(\'You have mail!\')\n    growl(\'5 new messages\', { sticky: true })\n    growl(\'5 new emails\', { title: \'Email Client\', image: \'Safari\', sticky: true })\n    growl(\'Message with title\', { title: \'Title\'})\n    growl(\'Set priority\', { priority: 2 })\n    growl(\'Show Safari icon\', { image: \'Safari\' })\n    growl(\'Show icon\', { image: \'path/to/icon.icns\' })\n    growl(\'Show image\', { image: \'path/to/my.image.png\' })\n    growl(\'Show png filesystem icon\', { image: \'png\' })\n    growl(\'Show pdf filesystem icon\', { image: \'article.pdf\' })\n    growl(\'Show pdf filesystem icon\', { image: \'article.pdf\' }, function(err){\n      // ... notified\n    })\n\n## Options\n\n  - title\n    - notification title\n  - name\n    - application name\n  - priority\n    - priority for the notification (default is 0)\n  - sticky\n    - weither or not the notification should remainin until closed\n  - image\n    - Auto-detects the context:\n      - path to an icon sets --iconpath\n      - path to an image sets --image\n      - capitalized word sets --appIcon\n      - filename uses extname as --icon\n      - otherwise treated as --icon\n      \n## License \n\n(The MIT License)\n\nCopyright (c) 2009 TJ Holowaychuk <tj@vision-media.ca>\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+344 silly resolved     readmeFilename: 'Readme.md',
+344 silly resolved     _id: 'growl@1.7.0',
+344 silly resolved     _from: 'growl@~1.7.0' },
+344 silly resolved   { name: 'filewatcher',
+344 silly resolved     version: '1.0.0',
+344 silly resolved     description: 'Wrapper around fs.watch with fallback to fs.watchFile',
+344 silly resolved     author: { name: 'Felix Gnass' },
+344 silly resolved     keywords: [ 'fs', 'file', 'watch', 'watchFile' ],
+344 silly resolved     repository: { type: 'git', url: 'http://github.com/fgnass/filewatcher.git' },
+344 silly resolved     license: 'MIT',
+344 silly resolved     main: 'index.js',
+344 silly resolved     scripts: { test: 'mocha' },
+344 silly resolved     devDependencies:
+344 silly resolved      { mocha: '~1.14.0',
+344 silly resolved        should: '~2.1.0',
+344 silly resolved        rimraf: '~2.2.2',
+344 silly resolved        posix: '~1.0.3' },
+344 silly resolved     readme: '# filewatcher\n\n[![Build Status](https://travis-ci.org/fgnass/filewatcher.png?branch=master)](https://travis-ci.org/fgnass/filewatcher)\n\nSimple wrapper around `fs.watch` that falls back to `fs.watchFile` when it runs\nout of file handles.\n\nThis module is used by [node-dev](https://npmjs.org/package/node-dev)\nand [instant](https://npmjs.org/package/instant).\n\n### Usage\n\n```js\nvar filewatcher = require(\'filewatcher\')\n\n// the default options\nvar opts = {\n  interval: 1000,  // if we need to poll, do it every 1000ms\n  persistent: true // don\'t end the process while files are watched\n}\n\nvar watcher = filewatcher(opts)\n\n// watch a file\nwatcher.add(file)\n\nwatcher.on(\'change\', function(file, mtime) {\n  console.log(\'File modified: %s\', file)\n  if (mtime == -1) console.log(\'deleted\')\n})\n\nwatcher.on(\'fallback\', function(limit) {\n  console.log(\'Ran out of file handles after watching %s files.\', limit)\n  console.log(\'Falling back to polling which uses more CPU.\')\n  console.log(\'Run ulimit -n 10000 to increase the limit for open files.\')\n})\n\nwatcher.remove(file)\nwatcher.removeAll()\n```\n\n### The MIT License (MIT)\n\nCopyright (c) 2013 Felix Gnass\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\n',
+344 silly resolved     readmeFilename: 'README.md',
+344 silly resolved     bugs: { url: 'https://github.com/fgnass/filewatcher/issues' },
+344 silly resolved     homepage: 'https://github.com/fgnass/filewatcher',
+344 silly resolved     _id: 'filewatcher@1.0.0',
+344 silly resolved     dist: { shasum: '5929f5956659a93ac42cf85fdf3c4d9c90e5619e' },
+344 silly resolved     _from: 'filewatcher@~1.0.0',
+344 silly resolved     _resolved: 'https://registry.npmjs.org/filewatcher/-/filewatcher-1.0.0.tgz' },
+344 silly resolved   { name: 'dateformat',
+344 silly resolved     description: 'A node.js package for Steven Levithan\'s excellent dateFormat() function.',
+344 silly resolved     maintainers: 'Felix Geisendörfer <felix@debuggable.com>',
+344 silly resolved     homepage: 'https://github.com/felixge/node-dateformat',
+344 silly resolved     author: { name: 'Steven Levithan' },
+344 silly resolved     contributors: [ [Object], [Object], [Object] ],
+344 silly resolved     version: '1.0.7-1.2.3',
+344 silly resolved     main: './lib/dateformat',
+344 silly resolved     dependencies: {},
+344 silly resolved     devDependencies: {},
+344 silly resolved     engines: { node: '*' },
+344 silly resolved     repository:
+344 silly resolved      { type: 'git',
+344 silly resolved        url: 'https://github.com/felixge/node-dateformat.git' },
+344 silly resolved     readme: '# dateformat\n\nA node.js package for Steven Levithan\'s excellent [dateFormat()][dateformat] function.\n\n## Modifications\n\n* Removed the `Date.prototype.format` method. Sorry folks, but extending native prototypes is for suckers.\n* Added a `module.exports = dateFormat;` statement at the bottom\n* Added the placeholder `N` to get the ISO 8601 numeric representation of the day of the week\n\n## Installation\n\n```bash\n$ npm install dateformat\n```\n\n## Usage\n\nAs taken from Steven\'s post, modified to match the Modifications listed above:\n```js\n    var dateFormat = require(\'dateformat\');\n    var now = new Date();\n\n    // Basic usage\n    dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");\n    // Saturday, June 9th, 2007, 5:46:21 PM\n\n    // You can use one of several named masks\n    dateFormat(now, "isoDateTime");\n    // 2007-06-09T17:46:21\n\n    // ...Or add your own\n    dateFormat.masks.hammerTime = \'HH:MM! "Can\\\'t touch this!"\';\n    dateFormat(now, "hammerTime");\n    // 17:46! Can\'t touch this!\n\n    // When using the standalone dateFormat function,\n    // you can also provide the date as a string\n    dateFormat("Jun 9 2007", "fullDate");\n    // Saturday, June 9, 2007\n\n    // Note that if you don\'t include the mask argument,\n    // dateFormat.masks.default is used\n    dateFormat(now);\n    // Sat Jun 09 2007 17:46:21\n\n    // And if you don\'t include the date argument,\n    // the current date and time is used\n    dateFormat();\n    // Sat Jun 09 2007 17:46:22\n\n    // You can also skip the date argument (as long as your mask doesn\'t\n    // contain any numbers), in which case the current date/time is used\n    dateFormat("longTime");\n    // 5:46:22 PM EST\n\n    // And finally, you can convert local time to UTC time. Simply pass in\n    // true as an additional argument (no argument skipping allowed in this case):\n    dateFormat(now, "longTime", true);\n    // 10:46:21 PM UTC\n\n    // ...Or add the prefix "UTC:" or "GMT:" to your mask.\n    dateFormat(now, "UTC:h:MM:ss TT Z");\n    // 10:46:21 PM UTC\n\n    // You can also get the ISO 8601 week of the year:\n    dateFormat(now, "W");\n    // 42\n\n    // and also get the ISO 8601 numeric representation of the day of the week:\n    dateFormat(now,"N");\n    // 6\n```\n## License\n\n(c) 2007-2009 Steven Levithan [stevenlevithan.com][stevenlevithan], MIT license.\n\n[dateformat]: http://blog.stevenlevithan.com/archives/date-time-format\n[stevenlevithan]: http://stevenlevithan.com/\n',
+344 silly resolved     readmeFilename: 'Readme.md',
+344 silly resolved     bugs: { url: 'https://github.com/felixge/node-dateformat/issues' },
+344 silly resolved     _id: 'dateformat@1.0.7-1.2.3',
+344 silly resolved     dist: { shasum: 'ee94157a2b1444b4a0cdc48dd6fe1ce67592e62d' },
+344 silly resolved     _from: 'dateformat@~1.0.4-1.2.3',
+344 silly resolved     _resolved: 'https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz' } ]
+345 info install growl@1.7.0 into /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+346 info install filewatcher@1.0.0 into /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+347 info install dateformat@1.0.7-1.2.3 into /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+348 info installOne growl@1.7.0
+349 info installOne filewatcher@1.0.0
+350 info installOne dateformat@1.0.7-1.2.3
+351 info /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl unbuild
+352 info /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher unbuild
+353 info /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat unbuild
+354 verbose tar unpack /Users/SkyArrow/.npm/growl/1.7.0/package.tgz
+355 silly lockFile 1d81387c-ules-node-dev-node-modules-growl tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl
+356 verbose lock tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl /Users/SkyArrow/.npm/1d81387c-ules-node-dev-node-modules-growl.lock
+357 silly lockFile ddb7d4bc-rrow-npm-growl-1-7-0-package-tgz tar:///Users/SkyArrow/.npm/growl/1.7.0/package.tgz
+358 verbose lock tar:///Users/SkyArrow/.npm/growl/1.7.0/package.tgz /Users/SkyArrow/.npm/ddb7d4bc-rrow-npm-growl-1-7-0-package-tgz.lock
+359 verbose tar unpack /Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+360 silly lockFile 6d11c1a9-ode-dev-node-modules-filewatcher tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher
+361 verbose lock tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher /Users/SkyArrow/.npm/6d11c1a9-ode-dev-node-modules-filewatcher.lock
+362 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+363 verbose lock tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz /Users/SkyArrow/.npm/ff19b642-pm-filewatcher-1-0-0-package-tgz.lock
+364 verbose tar unpack /Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+365 silly lockFile 058d291d-node-dev-node-modules-dateformat tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat
+366 verbose lock tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat /Users/SkyArrow/.npm/058d291d-node-dev-node-modules-dateformat.lock
+367 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+368 verbose lock tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz /Users/SkyArrow/.npm/e7b2dd71-teformat-1-0-7-1-2-3-package-tgz.lock
+369 silly gunzTarPerm modes [ '755', '644' ]
+370 silly gunzTarPerm modes [ '755', '644' ]
+371 silly gunzTarPerm modes [ '755', '644' ]
+372 silly gunzTarPerm extractEntry package.json
+373 silly gunzTarPerm extractEntry package.json
+374 silly gunzTarPerm extractEntry package.json
+375 silly gunzTarPerm extractEntry test.js
+376 silly gunzTarPerm extractEntry History.md
+377 silly gunzTarPerm extractEntry .npmignore
+378 silly gunzTarPerm extractEntry README.md
+379 silly gunzTarPerm extractEntry LICENSE
+380 silly gunzTarPerm extractEntry Readme.md
+381 silly gunzTarPerm extractEntry Readme.md
+382 silly gunzTarPerm extractEntry lib/growl.js
+383 silly gunzTarPerm extractEntry index.js
+384 silly gunzTarPerm extractEntry .jshintrc
+385 silly gunzTarPerm extractEntry lib/dateformat.js
+386 silly gunzTarPerm extractEntry test/basic.js
+387 silly gunzTarPerm extractEntry .travis.yml
+388 silly gunzTarPerm extractEntry test/test_dayofweek.js
+389 silly gunzTarPerm extractEntry test/test_weekofyear.js
+390 silly gunzTarPerm extractEntry test/test_weekofyear.sh
+391 silly lockFile 1d81387c-ules-node-dev-node-modules-growl tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl
+392 silly lockFile 1d81387c-ules-node-dev-node-modules-growl tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl
+393 silly lockFile 6d11c1a9-ode-dev-node-modules-filewatcher tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher
+394 silly lockFile 6d11c1a9-ode-dev-node-modules-filewatcher tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher
+395 silly lockFile ddb7d4bc-rrow-npm-growl-1-7-0-package-tgz tar:///Users/SkyArrow/.npm/growl/1.7.0/package.tgz
+396 silly lockFile ddb7d4bc-rrow-npm-growl-1-7-0-package-tgz tar:///Users/SkyArrow/.npm/growl/1.7.0/package.tgz
+397 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+398 silly lockFile ff19b642-pm-filewatcher-1-0-0-package-tgz tar:///Users/SkyArrow/.npm/filewatcher/1.0.0/package.tgz
+399 info preinstall growl@1.7.0
+400 info preinstall filewatcher@1.0.0
+401 verbose readDependencies using package.json deps
+402 verbose readDependencies using package.json deps
+403 verbose readDependencies using package.json deps
+404 silly resolved []
+405 verbose about to build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl
+406 info build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/growl
+407 verbose linkStuff [ true,
+407 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules',
+407 verbose linkStuff   false,
+407 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules' ]
+408 info linkStuff growl@1.7.0
+409 verbose readDependencies using package.json deps
+410 silly resolved []
+411 verbose about to build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher
+412 info build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/filewatcher
+413 verbose linkStuff [ true,
+413 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules',
+413 verbose linkStuff   false,
+413 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules' ]
+414 info linkStuff filewatcher@1.0.0
+415 verbose linkBins filewatcher@1.0.0
+416 verbose linkMans filewatcher@1.0.0
+417 verbose rebuildBundles filewatcher@1.0.0
+418 verbose linkBins growl@1.7.0
+419 verbose linkMans growl@1.7.0
+420 verbose rebuildBundles growl@1.7.0
+421 info install filewatcher@1.0.0
+422 info install growl@1.7.0
+423 info postinstall filewatcher@1.0.0
+424 info postinstall growl@1.7.0
+425 silly lockFile 058d291d-node-dev-node-modules-dateformat tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat
+426 silly lockFile 058d291d-node-dev-node-modules-dateformat tar:///Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat
+427 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+428 silly lockFile e7b2dd71-teformat-1-0-7-1-2-3-package-tgz tar:///Users/SkyArrow/.npm/dateformat/1.0.7-1.2.3/package.tgz
+429 info preinstall dateformat@1.0.7-1.2.3
+430 verbose readDependencies using package.json deps
+431 verbose readDependencies using package.json deps
+432 silly resolved []
+433 verbose about to build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat
+434 info build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules/dateformat
+435 verbose linkStuff [ true,
+435 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules',
+435 verbose linkStuff   false,
+435 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev/node_modules' ]
+436 info linkStuff dateformat@1.0.7-1.2.3
+437 verbose linkBins dateformat@1.0.7-1.2.3
+438 verbose linkMans dateformat@1.0.7-1.2.3
+439 verbose rebuildBundles dateformat@1.0.7-1.2.3
+440 info install dateformat@1.0.7-1.2.3
+441 info postinstall dateformat@1.0.7-1.2.3
+442 verbose about to build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+443 info build /Users/SkyArrow/.nvm/v0.10.22/lib/node_modules/node-dev
+444 verbose linkStuff [ true,
+444 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules',
+444 verbose linkStuff   true,
+444 verbose linkStuff   '/Users/SkyArrow/.nvm/v0.10.22/lib/node_modules' ]
+445 info linkStuff node-dev@2.1.4
+446 verbose linkBins node-dev@2.1.4
+447 verbose link bins [ { 'node-dev': './bin/node-dev' },
+447 verbose link bins   '/Users/SkyArrow/.nvm/v0.10.22/bin',
+447 verbose link bins   true ]
+448 verbose linkMans node-dev@2.1.4
+449 verbose rebuildBundles node-dev@2.1.4
+450 verbose rebuildBundles [ 'dateformat', 'filewatcher', 'growl' ]
+451 info install node-dev@2.1.4
+452 info postinstall node-dev@2.1.4
+453 error peerinvalid The package generator-karma does not satisfy its siblings' peerDependencies requirements!
+453 error peerinvalid Peer generator-angular@0.7.1 wants generator-karma@~0.6.0
+453 error peerinvalid Peer generator-angular-ui-router@0.5.3 wants generator-karma@~0.5.0
+454 error System Darwin 13.0.2
+455 error command "/Users/SkyArrow/.nvm/v0.10.22/bin/node" "/Users/SkyArrow/.nvm/v0.10.22/bin/npm" "install" "node-dev" "-g"
+456 error cwd /Users/SkyArrow/Dropbox/hexo/node_modules/hexo-webui
+457 error node -v v0.10.22
+458 error npm -v 1.3.14
+459 error code EPEERINVALID
+460 verbose exit [ 1, true ]

@@ -1,21 +1,49 @@
 css:
   common:
   app:
+  - ../js/lib/codemirror/lib/codemirror
+  - app
   login:
 
 js:
   app:
+  - lib/codemirror/lib/codemirror
+  - lib/codemirror/mode/markdown/markdown
+  - lib/codemirror/mode/javascript/javascript
+  - lib/codemirror/mode/htmlmixed/htmlmixed
+  - lib/codemirror/mode/xml/xml
+  - lib/codemirror/mode/css/css
   - lib/angular/angular
   - lib/angular-resource/angular-resource
   - lib/angular-route/angular-route
   - lib/angular-ui-router/release/angular-ui-router
+  - lib/angular-ui-codemirror/ui-codemirror
   - app
+  - services/base
   - services/post
-  - controllers/home/index
+  - services/file
+  - services/modal-stack
+  - services/modal
+  - services/hotkey
+  - services/body
+  - services/lightbox
+  - controllers/common/body
   - controllers/posts/index
+  - controllers/posts/list
   - controllers/posts/new
-  - controllers/posts/edit
+  - controllers/files/list
+  - controllers/files/show
+  - controllers/files/edit
+  - controllers/files/new-folder
   - directives/back
   - directives/pagination
+  - directives/rightclick
+  - directives/download
+  - directives/breadcrumb
+  - directives/modal
+  - directives/list
+  - directives/lightbox
+  - filters/byte
+  - filters/filetype
   login:
   - login/index

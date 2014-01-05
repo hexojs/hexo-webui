@@ -1,0 +1,70 @@
+#site-nav
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: site-nav-width
+  background: site-nav-background
+
+#site-nav-toggle
+  width: 35px
+  height: 35px
+  color: color-grey
+  display: block
+  position: absolute
+  top: 15px
+  left: 15px
+  cursor: pointer
+  transition: color 0.2s
+  icon("\f0c9", 25px)
+  &:hover
+    color: color-default
+
+#site-nav-list
+  margin-top: 8px
+
+.site-nav-link
+  display: block
+  color: #999
+  text-decoration: none
+  padding: 15px 20px 15px 50px
+  font-weight: bold
+  position: relative
+  line-height: 1
+  &:hover
+    color: #ddd
+  i
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 20px
+    margin: auto 0
+    width: 16px
+    height: 16px
+    icon(null, 16px)
+
+#site-nav-home-icon
+  &:before
+    content: "\f015"
+
+#site-nav-posts-icon
+  &:before
+    content: "\f044"
+
+#site-nav-monitor-icon
+  &:before
+    content: "\f0e4"
+
+#footer
+  position: absolute
+  bottom: 10px
+  left: 15px
+  right: 15px
+  color: color-grey
+  font-size: 0.85em
+  line-height: 1.6em
+  a
+    color: color-link
+    text-decoration: none
+    &:hover
+      text-decoration: underline

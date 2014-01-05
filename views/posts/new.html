@@ -1,0 +1,22 @@
+<modal modal-title="New Post">
+  <form class="form" name="form" ng-submit="create()" novalidate>
+    <div class="form-group">
+      <label for="post-new-title" class="form-label">Title</label>
+      <input type="text" name="title" class="form-input" id="post-new-title" ng-model="post.title" required ng-class="{error: isSubmitted && form.title.$invalid}">
+    </div>
+    <div class="form-group">
+      <label for="post-new-layout" class="form-label">Layout</label>
+      <select id="post-new-layout" name="layout" class="form-input" ng-model="post.layout">
+        <option ng-repeat="layout in layouts" value="{{ layout.name }}" ng-selected="layout.default">{{ layout.name }}</option>
+      </select>
+    </div>
+    <footer class="modal-footer">
+      <div class="btn-group right">
+        <input type="submit" class="btn btn-success" value="Create">
+      </div>
+      <div class="btn-group left">
+        <a class="btn" ng-click="cancel()">Cancel</a>
+      </div>
+    </footer>
+  </form>
+</modal>

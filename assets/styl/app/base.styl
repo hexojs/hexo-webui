@@ -1,0 +1,34 @@
+html, body
+  height: 100%
+  overflow: hidden
+
+#wrap
+  height: 100%
+  left: 0
+  transition: left 0.2s
+  position: relative
+  background: color-background
+  z-index: 1
+  box-shadow: 0 0 15px #111
+  .site-nav-on &
+    left: site-nav-width
+
+#wrap-inner
+  height: 100%
+
+#container
+  transition: opacity 0.2s
+  position: relative
+  height: 100%
+  .site-nav-on &
+    opacity: 0.5
+    pointer-events: none
+
+#main
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: auto
+  padding: header-height + action-bar-height right-padding 0 left-padding

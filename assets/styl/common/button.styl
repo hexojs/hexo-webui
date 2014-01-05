@@ -1,0 +1,108 @@
+.btn-group
+  display: inline-block
+
+.btn
+  display: block
+  cursor: pointer
+  line-height: 1em
+  padding: 0 15px
+  color: #fff
+  border-radius: btn-border-radius
+  font-weight: bold
+  background: btn-default-color
+  user-select: none
+  position: relative
+  border: none
+  font-size: 14px
+  font-family: font-sans
+  height: btn-normal-height
+  line-height: btn-normal-height
+  text-decoration: none
+  &:hover
+    background: lighten(btn-default-color, 20%)
+  &:active
+    background: darken(btn-default-color, 10%)
+  &.disabled
+    pointer-events: none
+    color: #ccc
+  .btn-group &
+    float: left
+    &:first-child:not(:last-child)
+      border-radius: btn-border-radius 0 0 btn-border-radius
+    &:last-child:not(:first-child)
+      border-radius: 0 btn-border-radius btn-border-radius 0
+    &:not(:first-child):not(:last-child)
+      border-radius: 0
+  i
+    position: relative
+    width: btn-font-size
+    height: btn-font-size
+    margin-top: (btn-normal-height - btn-font-size) * 0.5
+    margin-right: 8px
+    float: left
+    icon(null, btn-font-size)
+
+.btn-small
+  font-size: btn-small-font-size
+  padding: 0 10px
+  height: btn-small-height
+  line-height: btn-small-height
+  i
+    width: btn-small-font-size
+    height: btn-small-font-size
+    margin-right: 6px
+    margin-top: (btn-small-height - btn-small-font-size) * 0.5
+    &:before
+      width: btn-small-font-size
+      height: btn-small-font-size
+      font-size: btn-small-font-size
+
+.btn-group-small
+  .btn
+    @extend .btn-small
+
+.btn-large
+  font-size: btn-large-font-size
+  padding: 0 20px
+  height: btn-large-height
+  line-height: btn-large-height
+  i
+    width: btn-large-font-size
+    height: btn-large-font-size
+    margin-right: 10px
+    margin-top: (btn-large-height - btn-large-font-size) * 0.5
+    &:before
+      width: btn-large-font-size
+      height: btn-large-font-size
+      font-size: btn-large-font-size
+
+.btn-group-large
+  .btn
+    @extend .btn-large
+
+.btn-primary
+  background: btn-primary-color
+  &:hover
+    background: lighten(btn-primary-color, 20%)
+  &:active
+    background: darken(btn-primary-color, 10%)
+  &.disabled
+    color: lighten(btn-primary-color, 50%)
+
+.btn-success
+  background: btn-success-color
+  &:hover
+    background: lighten(btn-success-color, 20%)
+  &:active
+    background: darken(btn-success-color, 10%)
+  &.disabled
+    color: lighten(btn-success-color, 50%)
+
+.btn-danger
+  background: btn-danger-color
+  &:hover
+    background: lighten(btn-danger-color, 20%)
+  &:active
+    background: darken(btn-danger-color, 10%)
+  &.disabled
+    color: lighten(btn-danger-color, 50%)

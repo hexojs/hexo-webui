@@ -1,0 +1,14 @@
+<div class="modal">
+  <div class="modal-back" ng-click="dismiss()"></div>
+  <div class="modal-dialog">
+    <div class="modal-content-wrap">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2 class="modal-title">{{ modalTitle }}</h2>
+          <a class="modal-close-btn" ng-click="dismiss()"></a>
+        </header>
+        <div class="modal-body" ng-transclude></div>
+      </div>
+    </div>
+  </div>
+</div>

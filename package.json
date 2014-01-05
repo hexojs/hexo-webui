@@ -28,7 +28,8 @@
     "lodash": "2.4.1",
     "graceful-fs": "2.0.1",
     "async": "0.2.9",
-    "express-form": "0.10.1"
+    "express-form": "0.10.1",
+    "mime": "1.2.11"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

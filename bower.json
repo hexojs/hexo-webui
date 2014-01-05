@@ -5,6 +5,8 @@
     "angular": "~1.2.6",
     "angular-ui-router": "~0.2.7",
     "angular-route": "~1.2.6",
-    "angular-resource": "~1.2.6"
+    "angular-resource": "~1.2.6",
+    "angular-ui-codemirror": "~0.1.0",
+    "codemirror": "~3.20.0"
   }
 }

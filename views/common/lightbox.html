@@ -1,0 +1,19 @@
+<div class="lightbox">
+  <div class="lightbox-images" ng-click="next()">
+    <img class="lightbox-image" src="{{ image.src }}" ng-repeat="image in images" ng-show="current === $index">
+  </div>
+  <header class="lightbox-header">
+    <div class="lightbox-title">({{ current + 1 }}/{{ images.length }}) {{ images[current].name }}</div>
+    <a class="lightbox-close-btn" ng-click="close()"></a>
+  </header>
+  <footer class="lightbox-footer">
+    <div class="lightbox-paginator">
+      <a class="lightbox-prev-btn" ng-click="prev()"></a>
+      <a class="lightbox-next-btn" ng-click="next()"></a>
+    </div>
+    <div class="lightbox-footer-right">
+      <a href="{{ images[current].src }}" target="_blank" class="lightbox-link-btn"></a>
+      <a href="{{ images[current].download }}" class="lightbox-download-btn" download ng-show="images[current].download"></a>
+    </div>
+  </footer>
+</div>

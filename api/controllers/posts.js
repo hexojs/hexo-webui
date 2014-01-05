@@ -29,9 +29,8 @@ exports.index = [validators.index, function(req, res, next){
 }];
 
 exports.show = [validators.show, function(req, res, next){
-  var form = req.form;
-
-  var data = Post.get(form.id);
+  var form = req.form,
+    data = Post.get(form.id);
 
   if (!data) return res.send(404);
 
@@ -42,18 +41,15 @@ exports.show = [validators.show, function(req, res, next){
   res.json(data);
 }];
 
-exports.create = function(req, res, next){
-  //
-};
+exports.create = [validators.create, function(req, res, next){
+  var form = req.form;
 
-exports.update = function(req, res, next){
-  //
-};
+  hexo.post.create(form, function(err, path, content){
+    if (err) return next(err);
 
-exports.destroy = function(req, res, next){
-  //
-};
-
-exports.preview = function(req, res, next){
-  //
-};
+    res.json({
+      path: path.substring(hexo.source_dir.length),
+      content: content
+    });
+  });
+}];

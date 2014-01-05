@@ -1,0 +1,31 @@
+.form-group
+  margin-bottom: 15px
+
+.form-input
+  width: 100%
+  padding: 6px 12px
+  border: 1px solid color-border
+  font: 14px font-sans
+  box-sizing: border-box
+  border-radius: 4px
+  transition: border-color 0.2s
+  color: color-default
+  outline: none
+  vertical-align: middle
+  height: 31px
+  line-height: 1.5em
+  box-shadow: none
+  &:focus
+    border-color: form-focus-color
+  &.success
+    border-color: form-success-color
+  &.error
+    border-color: form-error-color
+  &.disabled, &:disabled
+    background: #eee
+    cursor: not-allowed
+
+.form-label
+  font-weight: bold
+  margin-bottom: 5px
+  display: inline-block

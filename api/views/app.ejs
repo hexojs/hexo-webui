@@ -2,12 +2,19 @@
 <html ng-app="hexo">
   <head>
     <meta charset="utf-8">
-    <title>Hexo Web UI</title>
+    <title ng-bind="title">Hexo Web UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%- asset_css('app') %>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-    <%- partial('partials/header') %>
-    <div id="container" ui-view></div>
+  <body ng-controller="BodyCtrl" ng-class="{'site-nav-on': isSiteNavOn}">
+    <div id="wrap">
+      <div id="wrap-inner" ng-click="closeSiteNav()">
+        <div id="container" ui-view></div>
+      </div>
+      <a id="site-nav-toggle" ng-click="toggleSiteNav()"></a>
+    </div>
+    <%- partial('partials/sidebar') %>
     <%- asset_js('app') %>
   </body>
 </html>

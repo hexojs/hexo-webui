@@ -1,0 +1,22 @@
+<header id="header">
+  <div id="title-bar">
+    <h1 id="header-title">{{ file.name || 'Loading...' }}</h1>
+    <nav id="section-nav">
+      <div class="btn-group">
+        <a class="btn btn-danger"><i class="delete-icon"></i>Delete</a>
+      </div>
+      <div class="btn-group">
+        <!--<a class="btn btn-primary"><i class="preview-icon"></i>Preview</a>-->
+        <a class="btn btn-primary" href="/api/files/{{ file.path }}?download=true" download><i class="download-icon"></i>Download</a>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn-success disabled"><i class="save-icon"></i>Save</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<nav id="action-bar">
+</nav>
+<div id="main">
+  <textarea ui-codemirror="editorOptions" ng-model="file.content"></textarea>
+</div>

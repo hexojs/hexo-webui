@@ -1,0 +1,84 @@
+#header
+  position: absolute
+  top: 0
+  left: left-padding
+  right: right-padding
+  background: color-background
+  height: header-height
+  z-index: 1
+
+#title-bar
+  clearfix()
+  padding: 15px 0
+  height: 35px
+
+#header-title
+  color: color-default
+  font-weight: 300
+  letter-spacing: 1px
+  line-height: 35px
+  font-size: 22px
+  float: left
+
+#section-nav
+  float: right
+  .btn-group
+    margin-top: 2px
+
+#action-bar
+  clearfix()
+  border-bottom: 1px solid color-border
+  height: action-bar-height
+  position: absolute
+  top: header-height
+  left: left-padding
+  right: right-padding
+  background: color-background
+  z-index: 1
+
+$sorter
+  float: left
+  display: block
+  cursor: pointer
+
+.primary-sorter
+  @extend $sorter
+  width: 60%
+
+.minor-sorter
+  @extend $sorter
+  width: 20%
+
+.sorter-text
+  color: color-grey
+  font-size: 0.85em
+  line-height: 1
+  padding: 10px 0
+  display: block
+
+.breadcrumbs
+  float: left
+
+.breadcrumb-item
+  float: left
+
+.breadcrumb-link
+  @extend #header-title
+  text-decoration: none
+  color: color-link
+  display: block
+  float: left
+  &.current
+    color: color-default
+
+.breadcrumb-separator
+  color: color-grey
+  font-family: font-icon
+  font-size: 12px
+  float: left
+  width: 12px
+  height: 35px
+  line-height: 35px
+  margin: 0 10px
+  &:before
+    content: "\f054"

@@ -1,16 +1,25 @@
 module.exports = function(app){
-  var renderApp = function(req, res, next){
-    res.render('app');
-  };
-
   app.namespace('api', function(api){
-    api.resources('posts', {controller: 'posts', except: ['new', 'edit']}, function(posts){
-      posts.get('preview');
+    api.resources('posts', {controller: 'posts', only: ['index', 'show', 'create']});
+
+    api.namespace('files', function(files){
+      files.get('*', 'files#show');
+      files.post('*', 'files#save');
+      files.delete('*', 'files#destroy');
     });
+
+    api.resources('scaffolds', {controller: 'scaffolds', except: ['new', 'edit']});
+
+    api.get('files', 'files#show');
+    api.post('files', 'files#save');
+    api.delete('files', 'files#destroy');
+    api.get('preview', 'common#preview');
   });
 
-  app.get('/', renderApp);
-  app.get('posts', renderApp);
-  app.get('posts/new', renderApp);
-  app.get('posts/:id/edit', renderApp);
+  app.get('/', 'common#app');
+  app.get('list/*', 'common#app');
+  app.get('show/*', 'common#app');
+  app.get('edit/*', 'common#app');
+  app.get('posts', 'common#app');
+  app.get('posts/:page', 'common#app');
 };

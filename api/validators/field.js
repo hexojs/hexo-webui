@@ -1,12 +1,12 @@
-var Field = require('express-form/lib/field');
+var FormField = require('express-form/lib/field');
 
-exports = module.exports = function(){
-  Field.apply(this, arguments);
+var Field = function(){
+  FormField.apply(this, arguments);
 };
 
-exports.prototype.__proto__ = Field.prototype;
+Field.prototype.__proto__ = FormField.prototype;
 
-exports.prototype.split = function(separator){
+Field.prototype.split = function(separator){
   return this.add(function(value){
     if (!value) return [];
     if (Array.isArray(value)) return value;
@@ -21,4 +21,8 @@ exports.prototype.split = function(separator){
   });
 };
 
-exports.prototype.default = Field.prototype.ifNull;
+Field.prototype.default = FormField.prototype.ifNull;
+
+module.exports = function(property, label){
+  return new Field(property, label);
+};

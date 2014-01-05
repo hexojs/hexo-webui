@@ -1,15 +1,20 @@
 var form = require('express-form'),
-  Field = require('./field');
+  field = require('./field');
 
 exports.index = form(
-  new Field('limit').default(50).toInt(),
-  new Field('skip').default(0).toInt(),
-  new Field('select').array().split(','),
-  new Field('orderby').default('date'),
-  new Field('order').default(-1)
+  field('limit').default(50).toInt(),
+  field('skip').default(0).toInt(),
+  field('select').array().split(','),
+  field('orderby').default('date'),
+  field('order').default(-1)
 );
 
 exports.show = form(
-  new Field('id').required(),
-  new Field('select').array().split(',')
+  field('id').required(),
+  field('select').array().split(',')
+);
+
+exports.create = form(
+  field('title').required(),
+  field('layout')
 );

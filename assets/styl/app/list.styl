@@ -1,0 +1,84 @@
+.list-item
+  clearfix()
+  border-bottom: 1px solid color-border
+  padding: 8px 0
+  user-select: none
+  &:hover
+    background: list-hover-background
+  &.selected
+    background: list-selected-background
+
+$list-col
+  float: left
+  color: color-default
+  line-height: list-icon-size
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  padding-right: 10px
+  box-sizing: border-box
+
+.list-primary-col
+  @extend $list-col
+  width: 60%
+
+.list-minor-col
+  @extend $list-col
+  width: 20%
+
+.list-link
+  text-decoration: none
+  color: color-default
+  padding-left: 10px
+  &:hover
+    text-decoration: underline
+
+$list-icon-after
+  font-size: 11px
+  position: absolute
+  top: 3px
+  left: 10px
+
+.list-icon
+  width: list-icon-size
+  height: list-icon-size
+  position: relative
+  float: left
+  display: block
+  color: color-grey
+  icon("\f016", list-icon-size)
+  &.folder
+    &:before
+      content: "\f114"
+  &.text
+    color: color-default
+    &:before
+      content: "\f0f6"
+  &.image
+    color: list-icon-image-color
+    &:after
+      @extend $list-icon-after
+      content: "\f03e"
+  &.video
+    color: list-icon-video-color
+    &:after
+      @extend $list-icon-after
+      content: "\f03d"
+  &.audio
+    color: list-icon-audio-color
+    &:after
+      @extend $list-icon-after
+      content: "\f001"
+  &.code
+    color: list-icon-code-color
+    &:after
+      @extend $list-icon-after
+      content: "\f121"
+
+.upload-icon
+  &:before
+    content: "\f093"
+
+.new-folder-icon
+  &:before
+    content: "\f07b"

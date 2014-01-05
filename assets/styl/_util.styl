@@ -1,0 +1,18 @@
+icon(content, size)
+  font-style: normal
+  font-weight: normal
+  font-family: font-icon
+  &:before
+    font-size: size
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: size
+    height: size
+    margin: auto
+    text-align: center
+    line-height: 1
+    if content
+      content: content

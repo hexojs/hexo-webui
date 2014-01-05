@@ -1,0 +1,107 @@
+.lightbox
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9999
+  overflow: auto
+  background: #000
+
+.lightbox-images
+  position: absolute
+  top: lightbox-ctrl-height
+  bottom: lightbox-ctrl-height
+  left: 0
+  right: 0
+
+.lightbox-image
+  display: block
+  max-width: 100%
+  max-height: 100%
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+.lightbox-header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: lightbox-ctrl-height
+
+.lightbox-title
+  color: color-grey
+  line-height: lightbox-ctrl-height
+  position: absolute
+  top: 0
+  left: 15px
+  right: 60px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+$lightbox-icon
+  icon(null, lightbox-icon-size)
+  color: #fff
+  opacity: 0.6
+  width: 45px
+  height: 45px
+  display: block
+  cursor: pointer
+  position: relative
+  float: left
+  transition: opacity 0.2s
+  &:hover
+    opacity: 1
+
+.lightbox-close-btn
+  @extend $lightbox-icon
+  float: right
+  &:before
+    content: "\f00d"
+
+.lightbox-footer
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  height: lightbox-ctrl-height
+  transition: opacity 0.2s
+
+.lightbox-paginator
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  width: 90px
+
+.lightbox-prev-btn
+  @extend $lightbox-icon
+  &:before
+    content: "\f053"
+
+.lightbox-next-btn
+  @extend $lightbox-icon
+  &:before
+    content: "\f054"
+
+.lightbox-footer-right
+  position: absolute
+  top: 0
+  right: 0
+
+.lightbox-link-btn
+  @extend $lightbox-icon
+  &:before
+    content: "\f0c1"
+
+.lightbox-download-btn
+  @extend $lightbox-icon
+  &:before
+    content: "\f019"
