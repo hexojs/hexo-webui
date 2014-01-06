@@ -561,6 +561,51 @@ body {
 .lightbox-download-btn:before {
   content: "\f019";
 }
+.context-menu {
+  position: absolute;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border: 1px solid #ddd;
+  z-index: 9999;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+.context-menu-item {
+  display: block;
+  color: #555;
+  padding: 10px 15px;
+  line-height: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.context-menu-item:hover {
+  background: #eee;
+}
+.context-menu-item i {
+  font-style: normal;
+  font-weight: normal;
+  font-family: FontAwesome;
+}
+.context-menu-item i:before {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  text-align: center;
+  line-height: 1;
+}
+.context-menu-separator {
+  background: #ddd;
+  height: 1px;
+  margin: 5px 0;
+}
 html,
 body {
   height: 100%;
@@ -824,7 +869,6 @@ body {
 .list-item {
   zoom: 1;
   border-bottom: 1px solid #ddd;
-  padding: 8px 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -853,7 +897,7 @@ body {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  padding-right: 10px;
+  padding: 8px 10px 8px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

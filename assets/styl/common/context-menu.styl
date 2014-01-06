@@ -1,0 +1,25 @@
+.context-menu
+  position: absolute
+  background: #fff
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+  border: 1px solid color-border
+  z-index: 9999
+  border-radius: 4px
+  padding: 5px 0
+
+.context-menu-item
+  display: block
+  color: color-default
+  padding: 10px 15px
+  line-height: 16px
+  cursor: pointer
+  text-decoration: none
+  &:hover
+    background: #eee
+  i
+    icon(null, 16px)
+
+.context-menu-separator
+  background: color-border
+  height: 1px
+  margin: 5px 0

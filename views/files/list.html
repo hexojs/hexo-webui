@@ -21,8 +21,8 @@
   </a>
 </nav>
 <div id="main">
-  <list data="files" resolve="{show: show, dblclick: dblclick}">
-    <div ng-dblclick="dblclick(item)">
+  <list data="files" resolve="listActions">
+    <div ng-dblclick="dblclick(item)" ng-rightclick="rightClick($event, item)">
       <div class="list-primary-col">
         <a href="{{ item.link }}" class="list-link" ng-click="show($event, item)"><i class="list-icon {{ item.iconClass }}"></i>{{ item.name }}</a>
       </div>

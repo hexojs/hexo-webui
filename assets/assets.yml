@@ -27,6 +27,7 @@ js:
   - services/hotkey
   - services/body
   - services/lightbox
+  - services/context-menu
   - controllers/common/body
   - controllers/posts/index
   - controllers/posts/list
@@ -35,6 +36,7 @@ js:
   - controllers/files/show
   - controllers/files/edit
   - controllers/files/new-folder
+  - controllers/files/context-menu
   - directives/back
   - directives/pagination
   - directives/rightclick
@@ -42,7 +44,6 @@ js:
   - directives/breadcrumb
   - directives/modal
   - directives/list
-  - directives/context-menu
   - filters/byte
   - filters/filetype
   login:

@@ -1,4 +1,4 @@
-angular.module('hexo').controller('FileListCtrl', function($scope, $stateParams, $location, baseService, File, Modal, lightbox){
+angular.module('hexo').controller('FileListCtrl', function($scope, $stateParams, $location, baseService, File, Modal, lightbox, ContextMenu){
   var editableTypes = [
     'text/plain',
     'text/x-markdown',
@@ -86,20 +86,31 @@ angular.module('hexo').controller('FileListCtrl', function($scope, $stateParams,
     }
   };
 
-  $scope.show = function($event, file){
-    if (file.isEditable || file.is_dir) return;
+  $scope.listActions = {
+    show: function(event, file){
+      if (file.isEditable || file.is_dir) return;
 
-    $event.preventDefault();
-    enter(file);
-  };
-
-  $scope.dblclick = function(file){
-    if (file.isEditable || file.is_dir){
-      $location.url(file.link);
-    } else {
+      event.preventDefault();
       enter(file);
+    },
+    dblclick: function(file){
+      if (file.isEditable || file.is_dir){
+        $location.url(file.link);
+      } else {
+        enter(file);
+      }
+    },
+    rightClick: function(event, file){
+      var menu = ContextMenu({
+        controller: 'FileContextMenuCtrl',
+        templateUrl: '/views/files/context-menu.html',
+        event: event
+      });
+
+      menu.path = file.path;
+      menu.open();
     }
-  };
+  }
 
   $scope.newFolder = function(){
     var modal = Modal({
