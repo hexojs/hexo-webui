@@ -121,6 +121,54 @@ body {
 .clear {
   clear: both;
 }
+.lightbox-close-btn:before {
+  content: "\f00d";
+}
+.delete-icon:before {
+  content: "\f014";
+}
+#site-nav-home-icon:before {
+  content: "\f015";
+}
+.lightbox-download-btn:before,
+.download-icon:before {
+  content: "\f019";
+}
+#site-nav-posts-icon:before,
+.new-post-icon:before {
+  content: "\f044";
+}
+.lightbox-prev-btn:before {
+  content: "\f053";
+}
+.lightbox-next-btn:before,
+.breadcrumb-separator:before {
+  content: "\f054";
+}
+.preview-icon:before {
+  content: "\f06e";
+}
+.new-folder-icon:before {
+  content: "\f07b";
+}
+.upload-icon:before {
+  content: "\f093";
+}
+.lightbox-link-btn:before {
+  content: "\f0c1";
+}
+.save-icon:before {
+  content: "\f0c7";
+}
+#site-nav-monitor-icon:before {
+  content: "\f0e4";
+}
+.list-icon.text:before {
+  content: "\f0f6";
+}
+.list-icon.folder:before {
+  content: "\f114";
+}
 .modal {
   position: fixed;
   top: 0;
@@ -180,6 +228,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #bbb;
   width: 38px;
   height: 38px;
@@ -200,7 +250,7 @@ body {
   margin: auto;
   text-align: center;
   line-height: 1;
-  content: "\f00d";
+  content: fa-icon-times;
 }
 .modal-close-btn:hover {
   color: #888;
@@ -281,6 +331,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .btn i:before {
   font-size: 15px;
@@ -475,6 +527,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #fff;
   opacity: 0.6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -520,9 +574,6 @@ body {
 .lightbox-close-btn {
   float: right;
 }
-.lightbox-close-btn:before {
-  content: "\f00d";
-}
 .lightbox-footer {
   position: absolute;
   bottom: 0;
@@ -544,22 +595,10 @@ body {
   margin: auto;
   width: 90px;
 }
-.lightbox-prev-btn:before {
-  content: "\f053";
-}
-.lightbox-next-btn:before {
-  content: "\f054";
-}
 .lightbox-footer-right {
   position: absolute;
   top: 0;
   right: 0;
-}
-.lightbox-link-btn:before {
-  content: "\f0c1";
-}
-.lightbox-download-btn:before {
-  content: "\f019";
 }
 .context-menu {
   position: absolute;
@@ -587,6 +626,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .context-menu-item i:before {
   font-size: 16px;
@@ -680,6 +721,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 #site-nav-toggle:before {
   font-size: 25px;
@@ -724,6 +767,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .site-nav-link i:before {
   font-size: 16px;
@@ -737,15 +782,6 @@ body {
   margin: auto;
   text-align: center;
   line-height: 1;
-}
-#site-nav-home-icon:before {
-  content: "\f015";
-}
-#site-nav-posts-icon:before {
-  content: "\f044";
-}
-#site-nav-monitor-icon:before {
-  content: "\f0e4";
 }
 #footer {
   position: absolute;
@@ -863,9 +899,6 @@ body {
   line-height: 35px;
   margin: 0 10px;
 }
-.breadcrumb-separator:before {
-  content: "\f054";
-}
 .list-item {
   zoom: 1;
   border-bottom: 1px solid #ddd;
@@ -935,6 +968,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .list-icon:before {
   font-size: 32px;
@@ -950,14 +985,8 @@ body {
   line-height: 1;
   content: "\f016";
 }
-.list-icon.folder:before {
-  content: "\f114";
-}
 .list-icon.text {
   color: #555;
-}
-.list-icon.text:before {
-  content: "\f0f6";
 }
 .list-icon.image {
   color: #6887bd;
@@ -983,28 +1012,7 @@ body {
 .list-icon.code:after {
   content: "\f121";
 }
-.upload-icon:before {
-  content: "\f093";
-}
-.new-folder-icon:before {
-  content: "\f07b";
-}
 .CodeMirror {
   height: 100%;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-}
-.delete-icon:before {
-  content: "\f014";
-}
-.preview-icon:before {
-  content: "\f06e";
-}
-.download-icon:before {
-  content: "\f019";
-}
-.save-icon:before {
-  content: "\f0c7";
-}
-.new-post-icon:before {
-  content: "\f044";
 }

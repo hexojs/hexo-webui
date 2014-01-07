@@ -63,9 +63,8 @@ $lightbox-icon
 
 .lightbox-close-btn
   @extend $lightbox-icon
+  @extend $fa-icon-times
   float: right
-  &:before
-    content: "\f00d"
 
 .lightbox-footer
   position: absolute
@@ -86,13 +85,11 @@ $lightbox-icon
 
 .lightbox-prev-btn
   @extend $lightbox-icon
-  &:before
-    content: "\f053"
+  @extend $fa-icon-chevron-left
 
 .lightbox-next-btn
   @extend $lightbox-icon
-  &:before
-    content: "\f054"
+  @extend $fa-icon-chevron-right
 
 .lightbox-footer-right
   position: absolute
@@ -101,10 +98,8 @@ $lightbox-icon
 
 .lightbox-link-btn
   @extend $lightbox-icon
-  &:before
-    content: "\f0c1"
+  @extend $fa-icon-link
 
 .lightbox-download-btn
   @extend $lightbox-icon
-  &:before
-    content: "\f019"
+  @extend $fa-icon-download

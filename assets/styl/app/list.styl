@@ -45,39 +45,35 @@ $list-icon-after
   float: left
   display: block
   color: color-grey
-  icon("\f016", list-icon-size)
+  icon(fa-var-file-o, list-icon-size)
   &.folder
-    &:before
-      content: "\f114"
+    @extend $fa-icon-folder-o
   &.text
     color: color-default
-    &:before
-      content: "\f0f6"
+    @extend $fa-icon-file-text-o
   &.image
     color: list-icon-image-color
     &:after
       @extend $list-icon-after
-      content: "\f03e"
+      content: fa-var-picture-o
   &.video
     color: list-icon-video-color
     &:after
       @extend $list-icon-after
-      content: "\f03d"
+      content: fa-var-video-camera
   &.audio
     color: list-icon-audio-color
     &:after
       @extend $list-icon-after
-      content: "\f001"
+      content: fa-var-music
   &.code
     color: list-icon-code-color
     &:after
       @extend $list-icon-after
-      content: "\f121"
+      content: fa-var-code
 
 .upload-icon
-  &:before
-    content: "\f093"
+  @extend $fa-icon-upload
 
 .new-folder-icon
-  &:before
-    content: "\f07b"
+  @extend $fa-icon-folder
