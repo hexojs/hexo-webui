@@ -30,6 +30,23 @@ module.exports = function(grunt){
         tasks: ['stylus']
       }
     },
+    htmlmin: {
+      app: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeCommentsFromCDATA: true,
+          removeOptionalTags: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'views/',
+          src: '**/*.html',
+          dest: 'public/views/'
+        }]
+      }
+    },
     copy: {
       fontawesome: {
         expand: true,
@@ -40,7 +57,8 @@ module.exports = function(grunt){
     },
     clean: {
       fontawesome: ['public/css/fonts', 'assets/styl/common/font.styl'],
-      tmp: ['tmp']
+      tmp: ['tmp'],
+      views: ['public/views']
     }
   });
 
@@ -48,5 +66,6 @@ module.exports = function(grunt){
   grunt.loadTasks('build/tasks');
 
   grunt.registerTask('fontawesome', ['clean:fontawesome', 'gitclone:fontawesome', 'copy:fontawesome', 'fontmap', 'clean:tmp']);
-  grunt.registerTask('build', ['stylus']);
+  grunt.registerTask('install', ['fontawesome']);
+  grunt.registerTask('build', ['stylus', 'htmlmin']);
 };
