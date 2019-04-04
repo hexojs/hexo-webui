@@ -29,7 +29,7 @@
     "graceful-fs": "2.0.1",
     "async": "0.2.9",
     "express-form": "0.10.1",
-    "mime": "1.2.11"
+    "mime": "2.4.1"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
