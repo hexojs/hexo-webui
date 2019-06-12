@@ -26,7 +26,7 @@
   "dependencies": {
     "express": "3.21.2",
     "lodash": "4.17.11",
-    "graceful-fs": "2.0.1",
+    "graceful-fs": "4.1.15",
     "async": "0.2.9",
     "express-form": "0.10.1",
     "mime": "1.2.11"
