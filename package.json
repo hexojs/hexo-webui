@@ -5,12 +5,12 @@
   "main": "lib/index",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tommy351/hexo-webui.git"
+    "url": "hexojs/hexo-webui"
   },
   "bugs": {
     "url": "https://github.com/tommy351/hexo-webui/issues"
   },
-  "homepage": "http://zespia.tw/hexo/",
+  "homepage": "https://hexo.io/",
   "keywords": [
     "website",
     "blog",
@@ -19,17 +19,14 @@
     "hexo"
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
-  "license": {
-    "type": "MIT",
-    "url": "https://raw.github.com/tommy351/hexo/master/LICENSE"
-  },
+  "license": "MIT",
   "dependencies": {
     "express": "3.21.2",
-    "lodash": "4.17.11",
+    "lodash": "4.17.14",
     "graceful-fs": "2.0.1",
     "async": "0.2.9",
     "express-form": "0.10.1",
-    "mime": "1.2.11"
+    "mime": "1.6.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
