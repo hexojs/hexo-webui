@@ -1,8 +1,8 @@
-module.exports = function(app){
-  app.namespace('api', function(api){
+module.exports = app => {
+  app.namespace('api', api => {
     api.resources('posts', {controller: 'posts', only: ['index', 'show', 'create']});
 
-    api.namespace('files', function(files){
+    api.namespace('files', files => {
       files.get('*', 'files#show');
       files.post('*', 'files#save');
       files.delete('*', 'files#destroy');

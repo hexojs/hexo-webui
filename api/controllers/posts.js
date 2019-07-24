@@ -1,23 +1,21 @@
-var _ = require('lodash');
+const _ = require('lodash');
 
-var Post = hexo.model('Post'),
-  validators = require('../validators/posts');
+const Post = hexo.model('Post');
+const validators = require('../validators/posts');
 
-exports.index = [validators.index, function(req, res, next){
-  var form = req.form;
+exports.index = [validators.index, (req, res, next) => {
+  const form = req.form;
 
-  var data = Post
+  let data = Post
     .sort(form.orderby, form.order)
     .skip(form.skip)
     .limit(form.limit)
     .toArray();
 
   if (form.select && form.select.length){
-    var select = _.uniq(form.select);
+    const select = _.uniq(form.select);
 
-    data = _.map(data, function(item){
-      return _.pick(item, select);
-    });
+    data = _.map(data, item => _.pick(item, select));
   }
 
   res.json({
@@ -28,9 +26,9 @@ exports.index = [validators.index, function(req, res, next){
   });
 }];
 
-exports.show = [validators.show, function(req, res, next){
-  var form = req.form,
-    data = Post.get(form.id);
+exports.show = [validators.show, (req, res, next) => {
+  const form = req.form;
+  let data = Post.get(form.id);
 
   if (!data) return res.send(404);
 
@@ -41,15 +39,15 @@ exports.show = [validators.show, function(req, res, next){
   res.json(data);
 }];
 
-exports.create = [validators.create, function(req, res, next){
-  var form = req.form;
+exports.create = [validators.create, (req, res, next) => {
+  const form = req.form;
 
-  hexo.post.create(form, function(err, path, content){
+  hexo.post.create(form, (err, path, content) => {
     if (err) return next(err);
 
     res.json({
       path: path.substring(hexo.source_dir.length),
-      content: content
+      content
     });
   });
 }];
