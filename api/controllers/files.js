@@ -62,8 +62,7 @@ const readdir = (path, stats, hidden, callback) => {
 };
 
 exports.show = [validators.show, filterPath, (req, res, next) => {
-  const fullPath = req.fullPath;
-  const form = req.form;
+  const { fullPath, form } = req;
 
   async.auto({
     exist(next) {
@@ -95,9 +94,7 @@ exports.show = [validators.show, filterPath, (req, res, next) => {
       file.readFile(fullPath, next);
     }],
     response: ['stats', 'data', 'content', (next, results) => {
-      const stats = results.stats;
-      const data = results.data;
-      const content = results.content;
+      const { stats, data, content } = results;
 
       if (form.raw){
         res.sendfile(fullPath);

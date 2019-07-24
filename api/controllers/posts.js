@@ -4,7 +4,7 @@ const Post = hexo.model('Post');
 const validators = require('../validators/posts');
 
 exports.index = [validators.index, (req, res, next) => {
-  const form = req.form;
+  const { form } = req;
 
   let data = Post
     .sort(form.orderby, form.order)
@@ -15,7 +15,7 @@ exports.index = [validators.index, (req, res, next) => {
   if (form.select && form.select.length){
     const select = _.uniq(form.select);
 
-    data = _.map(data, item => _.pick(item, select));
+    data = data.map(item => _.pick(item, select));
   }
 
   res.json({
@@ -40,7 +40,7 @@ exports.show = [validators.show, (req, res, next) => {
 }];
 
 exports.create = [validators.create, (req, res, next) => {
-  const form = req.form;
+  const { form } = req;
 
   hexo.post.create(form, (err, path, content) => {
     if (err) return next(err);

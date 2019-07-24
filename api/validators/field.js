@@ -11,13 +11,7 @@ Field.prototype.split = function(separator){
     if (!value) return [];
     if (Array.isArray(value)) return value;
 
-    const arr = [];
-
-    value.split(separator).forEach(item => {
-      arr.push(item.replace(/^\s+|\s+$/, ''));
-    });
-
-    return arr;
+    return value.split(separator).map(item => item.trim());
   });
 };
 
