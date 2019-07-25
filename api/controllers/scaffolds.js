@@ -1,19 +1,19 @@
-exports.index = function(){
+exports.index = () => {
   //
 };
 
-exports.show = function(){
+exports.show = () => {
   //
 };
 
-exports.create = function(){
+exports.create = () => {
   //
 };
 
-exports.update = function(){
+exports.update = () => {
   //
 };
 
-exports.destroy = function(){
+exports.destroy = () => {
   //
 };

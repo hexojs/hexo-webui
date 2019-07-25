@@ -1,30 +1,25 @@
-var fs = require('graceful-fs'),
-  pathFn = require('path'),
-  async = require('async'),
-  _ = require('lodash'),
-  mime = require('mime'),
-  file = hexo.util.file2,
-  validators = require('../validators/files');
+const fs = require('graceful-fs');
+const pathFn = require('path');
+const async = require('async');
+const _ = require('lodash');
+const mime = require('mime');
+const file = hexo.util.file2;
+const validators = require('../validators/files');
+const sourceDir = hexo.source_dir.replace(/[\/\\]$/, '');
+const rHidden = /^\./;
 
-var sourceDir = hexo.source_dir.replace(/[\/\\]$/, ''),
-  rHidden = /^\./;
+const filterPath = (req, res, next) => {
+  const fullPath = req.fullPath = pathFn.join(sourceDir, req.form.path || req.params[0]);
 
-var isStartWith = function(str, first){
-  return str.substring(0, first.length) === first;
-};
-
-var filterPath = function(req, res, next){
-  var fullPath = req.fullPath = pathFn.join(sourceDir, req.form.path || req.params[0]);
-
-  if (isStartWith(fullPath, sourceDir)){
+  if (fullPath.startsWith(sourceDir)){
     next();
   } else {
     res.send(403);
   }
 };
 
-var fileInfo = function(path, stats){
-  var isDir = stats.isDirectory();
+const fileInfo = (path, stats) => {
+  const isDir = stats.isDirectory();
 
   return {
     name: pathFn.basename(path),
@@ -37,27 +32,27 @@ var fileInfo = function(path, stats){
   }
 };
 
-var readdir = function(path, stats, hidden, callback){
-  fs.readdir(path, function(err, files){
+const readdir = (path, stats, hidden, callback) => {
+  fs.readdir(path, (err, files) => {
     if (err) return callback(err);
 
-    var data = fileInfo(path, stats),
-      entry = data.entry = [];
+    const data = fileInfo(path, stats);
+    let entry = data.entry = [];
 
     files = files.sort();
 
-    async.each(files, function(i, next){
+    async.each(files, (i, next) => {
       if (!hidden && rHidden.test(i)) return next();
 
-      var childPath = pathFn.join(path, i);
+      const childPath = pathFn.join(path, i);
 
-      fs.stat(childPath, function(err, stats){
+      fs.stat(childPath, (err, stats) => {
         if (err) return next(err);
 
         entry.push(fileInfo(childPath, stats));
         next();
       });
-    }, function(err){
+    }, err => {
       if (err) return callback(err);
 
       entry = _.sortBy(entry, 'name');
@@ -66,13 +61,12 @@ var readdir = function(path, stats, hidden, callback){
   });
 };
 
-exports.show = [validators.show, filterPath, function(req, res, next){
-  var fullPath = req.fullPath,
-    form = req.form;
+exports.show = [validators.show, filterPath, (req, res, next) => {
+  const { fullPath, form } = req;
 
   async.auto({
-    exist: function(next){
-      fs.exists(fullPath, function(exist){
+    exist(next) {
+      fs.exists(fullPath, exist => {
         if (exist){
           next();
         } else {
@@ -80,11 +74,11 @@ exports.show = [validators.show, filterPath, function(req, res, next){
         }
       });
     },
-    stats: ['exist', function(next){
+    stats: ['exist', next => {
       fs.stat(fullPath, next);
     }],
-    data: ['stats', function(next, results){
-      var stats = results.stats;
+    data: ['stats', (next, results) => {
+      const stats = results.stats;
 
       if (stats.isDirectory()){
         readdir(fullPath, stats, form.hidden, next);
@@ -94,15 +88,13 @@ exports.show = [validators.show, filterPath, function(req, res, next){
         next(null, fileInfo(fullPath, stats));
       }
     }],
-    content: ['exist', function(next){
+    content: ['exist', next => {
       if (!form.content) return next();
 
       file.readFile(fullPath, next);
     }],
-    response: ['stats', 'data', 'content', function(next, results){
-      var stats = results.stats,
-        data = results.data,
-        content = results.content;
+    response: ['stats', 'data', 'content', (next, results) => {
+      const { stats, data, content } = results;
 
       if (form.raw){
         res.sendfile(fullPath);
@@ -119,10 +111,10 @@ exports.show = [validators.show, filterPath, function(req, res, next){
   }, next);
 }];
 
-exports.save = [validators.save, filterPath, function(req, res, next){
+exports.save = [validators.save, filterPath, (req, res, next) => {
   //
 }];
 
-exports.destroy = [validators.destroy, filterPath, function(req, res, next){
+exports.destroy = [validators.destroy, filterPath, (req, res, next) => {
   //
 }];
