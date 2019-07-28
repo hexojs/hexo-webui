@@ -1,5 +1,5 @@
-var form = require('express-form'),
-  field = require('./field');
+const form = require('express-form');
+const field = require('./field');
 
 exports.index = form(
   field('limit').default(50).toInt(),

@@ -40,5 +40,8 @@
     "grunt-ngmin": "~0.0.3",
     "grunt-git": "~1.0.13",
     "grunt-contrib-copy": "~1.0.0"
+  },
+  "engines": {
+    "node": "8 || 10 || >=12"
   }
 }

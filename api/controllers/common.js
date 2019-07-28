@@ -1,7 +1,7 @@
-exports.app = function(req, res, next){
+exports.app = (req, res, next) => {
   res.render('app');
 };
 
-exports.preview = function(req, res, next){
+exports.preview = (req, res, next) => {
   //
 };
