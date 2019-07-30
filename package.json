@@ -21,25 +21,25 @@
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": "MIT",
   "dependencies": {
-    "async": "0.2.9",
+    "async": "^0.2.9",
     "express": "^4.17.1",
     "express-form": "^0.12.6",
-    "graceful-fs": "2.0.1",
-    "lodash": "4.17.11",
+    "graceful-fs": "^2.0.1",
+    "lodash": "^4.17.14",
     "mime": "^1.6.0"
   },
   "devDependencies": {
-    "grunt": "~1.0.4",
+    "grunt": "^1.0.4",
     "load-grunt-tasks": "^5.0.0",
     "grunt-contrib-stylus": "^1.2.0",
-    "grunt-contrib-watch": "~1.1.0",
-    "grunt-contrib-clean": "~2.0.0",
-    "grunt-contrib-concat": "~1.0.1",
-    "grunt-contrib-htmlmin": "~3.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-htmlmin": "^3.1.0",
     "grunt-contrib-uglify": "^4.0.1",
-    "grunt-ngmin": "~0.0.3",
-    "grunt-git": "~1.0.13",
-    "grunt-contrib-copy": "~1.0.0"
+    "grunt-ngmin": "^0.0.3",
+    "grunt-git": "^1.0.13",
+    "grunt-contrib-copy": "^1.0.0"
   },
   "engines": {
     "node": "8 || 10 || >=12"
