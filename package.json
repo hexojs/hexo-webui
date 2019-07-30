@@ -5,7 +5,7 @@
   "main": "lib/index",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hexo/hexo-webui.git"
+    "url": "github:hexo/hexo-webui"
   },
   "bugs": {
     "url": "https://github.com/hexo/hexo-webui/issues"
