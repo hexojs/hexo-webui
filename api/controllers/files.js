@@ -27,7 +27,7 @@ const fileInfo = (path, stats) => {
     date: stats.ctime.toISOString(),
     updated: stats.mtime.toISOString(),
     size: isDir ? 0 : stats.size,
-    type: isDir ? 'directory' : mime.lookup(path),
+    type: isDir ? 'directory' : mime.getType(path),
     is_dir: isDir
   }
 };
