@@ -1,7 +1,6 @@
 const fs = require('graceful-fs');
 const pathFn = require('path');
 const async = require('async');
-const _ = require('lodash');
 const mime = require('mime');
 const file = hexo.util.file2;
 const validators = require('../validators/files');
@@ -55,7 +54,10 @@ const readdir = (path, stats, hidden, callback) => {
     }, err => {
       if (err) return callback(err);
 
-      entry = _.sortBy(entry, 'name');
+      entry.sort((a, b) => {
+        return a.name.localeCompare(b.name);
+      });
+
       callback(null, data);
     });
   });
