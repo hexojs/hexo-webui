@@ -1,5 +1,3 @@
-const _ = require('lodash');
-
 const Post = hexo.model('Post');
 const validators = require('../validators/posts');
 
@@ -13,9 +11,14 @@ exports.index = [validators.index, (req, res, next) => {
     .toArray();
 
   if (form.select && form.select.length){
-    const select = _.uniq(form.select);
+    const select = Array.from(new Set(form.select));
 
-    data = data.map(item => _.pick(item, select));
+    data = data.map(item => select.reduce((obj, key) => {
+      if (item && Object.prototype.hasOwnProperty.call(item, key)) {
+        obj[key] = item[key];
+      }
+      return obj;
+    }, {}););
   }
 
   res.json({
@@ -33,7 +36,14 @@ exports.show = [validators.show, (req, res, next) => {
   if (!data) return res.send(404);
 
   if (form.select && form.select.length){
-    data = _.pick(data, _.uniq(form.select));
+    const select = Array.from(new Set(form.select));
+
+    data = select.reduce((obj, key) => {
+      if (data && Object.prototype.hasOwnProperty.call(data, key)) {
+        obj[key] = data[key];
+      }
+      return obj;
+    }, {});
   }
 
   res.json(data);

@@ -25,7 +25,6 @@
     "express": "^4.17.1",
     "express-form": "^0.12.6",
     "graceful-fs": "^4.2.0",
-    "lodash": "^4.17.14",
     "mime": "^1.6.0"
   },
   "devDependencies": {
