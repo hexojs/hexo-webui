@@ -2,7 +2,32 @@
   "name": "hexo-webui",
   "version": "0.0.1",
   "description": "Hexo Web UI",
-  "main": "lib/index",
+  "main": "lib/index.js",
+  "directories": {
+    "api": "./api",
+    "app": "./app",
+    "assets": "./assets",
+    "build": "./build",
+    "lib": "./lib",
+    "public": "./public",
+    "views": "./views"
+  },
+  "files": [
+    "bower.json",
+    ".bowerrc",
+    "api/",
+    "app/app.js",
+    "app/controllers",
+    "app/directives",
+    "app/filters",
+    "app/login",
+    "app/services",
+    "assets/",
+    "build/",
+    "lib/",
+    "public/",
+    "views/"
+  ],
   "repository": {
     "type": "git",
     "url": "github:hexojs/hexo-webui"
