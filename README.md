@@ -1,3 +1,7 @@
+# DEPRECATED!
+
+hexo-webui has been deprecated.
+
 # Hexo Web UI
 
 This is a web UI for Hexo. It provides you a more convenient envrionment to write your posts.
